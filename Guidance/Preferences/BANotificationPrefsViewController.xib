@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BANotificationPrefsViewController">
+            <connections>
+                <outlet property="asrAdhanButton" destination="kSd-mY-GAd" id="gEk-nc-xR4"/>
+                <outlet property="asrPreviewButton" destination="yTQ-aq-mAJ" id="GkP-0F-JKa"/>
+                <outlet property="dhuhrAdhanButton" destination="1qH-3w-j3K" id="JRH-3o-739"/>
+                <outlet property="dhuhrPreviewButton" destination="byl-9u-H9x" id="3Ce-Lb-ru6"/>
+                <outlet property="enableDuaButton" destination="29" id="YQ9-97-G1b"/>
+                <outlet property="fajrAdhanButton" destination="3" id="SMN-2F-bKe"/>
+                <outlet property="fajrPreviewButton" destination="17" id="yYB-6k-V1h"/>
+                <outlet property="fajrReminderButton" destination="20" id="9S1-cr-zTE"/>
+                <outlet property="fajrReminderOffsetButton" destination="xEx-di-jiS" id="EVJ-Pp-4v3"/>
+                <outlet property="ishaAdhanButton" destination="xNn-1a-hfb" id="zAs-b4-S2e"/>
+                <outlet property="ishaPreviewButton" destination="520-Bb-gLA" id="hXX-Gp-29L"/>
+                <outlet property="maghribAdhanButton" destination="9oj-Qc-Nev" id="XgJ-V9-cxd"/>
+                <outlet property="maghribPreviewButton" destination="T3c-BN-Kbd" id="qJJ-yR-RLs"/>
+                <outlet property="notificationsButton" destination="63" id="YpY-zx-mAg"/>
+                <outlet property="notificationsLabel" destination="61" id="5tZ-bd-6wV"/>
+                <outlet property="shuruqReminderButton" destination="22" id="sg3-YP-DbK"/>
+                <outlet property="shuruqReminderOffsetButton" destination="49" id="yod-zg-1Zr"/>
+                <outlet property="silentModeButton" destination="01q-yU-A9Y" id="her-qm-DjC"/>
+                <outlet property="view" destination="1" id="2"/>
+                <outlet property="volumeSlider" destination="15" id="LHd-ac-mak"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="490"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <popUpButton verticalHuggingPriority="750" id="3">
+                    <rect key="frame" x="105" y="400" width="149" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Al-Afasy" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="tas-UH-TFc" id="4">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="5">
+                            <items>
+                                <menuItem title="None" id="6"/>
+                                <menuItem isSeparatorItem="YES" id="qDR-wf-UqT">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Al-Afasy" state="on" id="tas-UH-TFc"/>
+                                <menuItem title="Yusuf Islam" id="7"/>
+                                <menuItem title="Makkah" id="8"/>
+                                <menuItem title="Istanbul" id="31"/>
+                                <menuItem title="Al-Quds" id="32"/>
+                                <menuItem title="Fajr" id="hDL-3H-xmY"/>
+                                <menuItem isSeparatorItem="YES" id="39o-b1-zDt">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Select..." id="Ed6-7c-5kk"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeAdhanFajr:" target="-2" id="cpU-hY-d43"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" id="1qH-3w-j3K">
+                    <rect key="frame" x="105" y="365" width="149" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Al-Afasy" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="HRD-2W-xti" id="O45-qi-kzG">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="nGi-Ec-uG8">
+                            <items>
+                                <menuItem title="None" id="DzM-oA-PLE"/>
+                                <menuItem isSeparatorItem="YES" id="twO-a2-5jH">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Al-Afasy" state="on" id="HRD-2W-xti"/>
+                                <menuItem title="Yusuf Islam" id="O8z-w7-DUN"/>
+                                <menuItem title="Makkah" id="EMk-Ws-QLx"/>
+                                <menuItem title="Istanbul" id="fvo-km-Fz8"/>
+                                <menuItem title="Al-Quds" id="56e-oO-3hL"/>
+                                <menuItem title="Fajr" id="ZRy-tu-ydr"/>
+                                <menuItem isSeparatorItem="YES" id="lne-7H-mLW">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Select..." id="UyO-jP-ZFk"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeAdhanDhuhr:" target="-2" id="A2u-56-Jmg"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" id="kSd-mY-GAd">
+                    <rect key="frame" x="105" y="330" width="149" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Al-Afasy" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="SnR-Rg-fej" id="8hh-ll-utM">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="LKh-os-988">
+                            <items>
+                                <menuItem title="None" id="Gjc-Zd-hGU"/>
+                                <menuItem isSeparatorItem="YES" id="mhI-2l-cqe">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Al-Afasy" state="on" id="SnR-Rg-fej"/>
+                                <menuItem title="Yusuf Islam" id="3a8-y9-Dvo"/>
+                                <menuItem title="Makkah" id="5K5-Wm-NPv"/>
+                                <menuItem title="Istanbul" id="w1s-38-Jml"/>
+                                <menuItem title="Al-Quds" id="yRP-Bp-rji"/>
+                                <menuItem title="Fajr" id="rEE-NU-elb"/>
+                                <menuItem isSeparatorItem="YES" id="9XH-Db-cgb">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Select..." id="VUW-WZ-OdB"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeAdhanAsr:" target="-2" id="na3-sH-p3V"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" id="9oj-Qc-Nev">
+                    <rect key="frame" x="105" y="295" width="149" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Al-Afasy" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="XqH-EL-rg4" id="Xcs-5c-NlC">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="zv3-cf-B0y">
+                            <items>
+                                <menuItem title="None" id="UdS-Ni-bsw"/>
+                                <menuItem isSeparatorItem="YES" id="lgb-iv-wIa">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Al-Afasy" state="on" id="XqH-EL-rg4"/>
+                                <menuItem title="Yusuf Islam" id="6HN-Oi-7h3"/>
+                                <menuItem title="Makkah" id="4lP-jl-PSd"/>
+                                <menuItem title="Istanbul" id="g7F-wd-jmF"/>
+                                <menuItem title="Al-Quds" id="NOa-8R-hXc"/>
+                                <menuItem title="Fajr" id="F1p-u0-dGd"/>
+                                <menuItem isSeparatorItem="YES" id="hyX-fc-R3r">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Select..." id="WdD-2P-cSX"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeAdhanMaghrib:" target="-2" id="1ww-Ts-V2Z"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" id="xNn-1a-hfb">
+                    <rect key="frame" x="105" y="260" width="149" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Al-Afasy" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="bd1-Fr-3x8" id="p3j-by-ieV">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="kKF-6W-Y2R">
+                            <items>
+                                <menuItem title="None" id="Frz-hT-ubC"/>
+                                <menuItem isSeparatorItem="YES" id="Ffv-AR-IuJ">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Al-Afasy" state="on" id="bd1-Fr-3x8"/>
+                                <menuItem title="Yusuf Islam" id="zry-JN-G2x"/>
+                                <menuItem title="Makkah" id="TFL-8i-snN"/>
+                                <menuItem title="Istanbul" id="M6Y-M1-2xS"/>
+                                <menuItem title="Al-Quds" id="ox1-2u-TkV"/>
+                                <menuItem title="Fajr" id="Zeg-a1-S8Z"/>
+                                <menuItem isSeparatorItem="YES" id="Z3d-Db-hyP">
+                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                                </menuItem>
+                                <menuItem title="Select..." id="lXb-GD-lYh"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeAdhanIsha:" target="-2" id="Nux-Jg-vr7"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="9">
+                    <rect key="frame" x="13" y="405" width="83" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Fajr:" id="10">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="q5n-mc-WbV">
+                    <rect key="frame" x="13" y="370" width="83" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Dhuhr:" id="h1g-nq-pHt">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="eZQ-pE-wFp">
+                    <rect key="frame" x="13" y="335" width="83" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Asr:" id="CO2-nc-nvd">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="Fkz-qq-HNb">
+                    <rect key="frame" x="13" y="300" width="83" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Maghrib:" id="MQH-T0-cZj">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="cRa-fr-VVG">
+                    <rect key="frame" x="13" y="265" width="83" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Isha:" id="arW-fe-x46">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="13">
+                    <rect key="frame" x="40" y="90" width="56" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Volume:" id="14">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" id="15">
+                    <rect key="frame" x="105" y="83" width="217" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="16"/>
+                    <connections>
+                        <action selector="changeVolume:" target="-2" id="xkX-Ux-i7m"/>
+                    </connections>
+                </slider>
+                <button verticalHuggingPriority="750" id="17">
+                    <rect key="frame" x="261" y="396" width="65" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="18">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="previewFajr:" target="-2" id="wOz-dE-6YX"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="byl-9u-H9x">
+                    <rect key="frame" x="261" y="361" width="65" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Bz3-bU-rbW">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="previewDhuhr:" target="-2" id="0hP-ha-fz6"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="yTQ-aq-mAJ">
+                    <rect key="frame" x="261" y="326" width="65" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uAJ-Tb-su2">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="previewAsr:" target="-2" id="OfY-rd-BPp"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="T3c-BN-Kbd">
+                    <rect key="frame" x="261" y="291" width="65" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hGz-CG-RKq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="previewMaghrib:" target="-2" id="JwA-Wh-ATd"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" id="520-Bb-gLA">
+                    <rect key="frame" x="261" y="256" width="65" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dbl-HI-izN">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="previewIsha:" target="-2" id="B0J-xU-JSW"/>
+                    </connections>
+                </button>
+                <box autoresizesSubviews="NO" verticalHuggingPriority="750" title="Box" boxType="separator" titlePosition="noTitle" id="28">
+                    <rect key="frame" x="20" y="60" width="340" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
+                <button id="20">
+                    <rect key="frame" x="40" y="210" width="83" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Reminder" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="21">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleFajrReminder:" target="-2" id="oSm-ht-3ak"/>
+                    </connections>
+                </button>
+                <button id="22">
+                    <rect key="frame" x="40" y="175" width="83" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Reminder" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="23">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleShuruqReminder:" target="-2" id="wn4-ti-dA8"/>
+                    </connections>
+                </button>
+                <button id="29">
+                    <rect key="frame" x="41" y="140" width="151" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Play dua after adhan" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="30">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleDuaEnabled:" target="-2" id="Zfa-mk-xGc"/>
+                    </connections>
+                </button>
+                <button id="01q-yU-A9Y">
+                    <rect key="frame" x="105" y="448" width="97" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Silent mode" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Sbq-j1-tqm">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleSilentMode:" target="-2" id="nv3-nT-dvV"/>
+                    </connections>
+                </button>
+                <textField verticalHuggingPriority="750" id="35">
+                    <rect key="frame" x="190" y="211" width="149" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="minutes before Fajr" id="36">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField verticalHuggingPriority="750" id="37">
+                    <rect key="frame" x="190" y="176" width="148" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="minutes before sunrise" id="38">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" id="49">
+                    <rect key="frame" x="128" y="171" width="59" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="15" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="58" id="50">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="51">
+                            <items>
+                                <menuItem title="15" state="on" id="58"/>
+                                <menuItem title="20" id="57"/>
+                                <menuItem title="30" id="56"/>
+                                <menuItem title="45" id="55"/>
+                                <menuItem title="60" id="54"/>
+                                <menuItem title="90" id="53"/>
+                                <menuItem title="120" id="52"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeShuruqReminderOffset:" target="-2" id="e1j-xh-SMy"/>
+                    </connections>
+                </popUpButton>
+                <popUpButton verticalHuggingPriority="750" id="xEx-di-jiS">
+                    <rect key="frame" x="128" y="206" width="59" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="15" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="PDA-By-L55" id="U66-38-RV8">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="smV-pH-MYy">
+                            <items>
+                                <menuItem title="15" state="on" id="PDA-By-L55"/>
+                                <menuItem title="20" id="r79-Ei-h01"/>
+                                <menuItem title="30" id="MCp-pQ-QjP"/>
+                                <menuItem title="45" id="1ny-VG-Fhf"/>
+                                <menuItem title="60" id="d9u-W7-l1w"/>
+                                <menuItem title="90" id="zus-5g-gvU"/>
+                                <menuItem title="120" id="Vpv-ua-9WP"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeFajrReminderOffset:" target="-2" id="hHv-oP-t0d"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" id="61">
+                    <rect key="frame" x="40" y="23" width="88" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Notifications:" id="62">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" id="63">
+                    <rect key="frame" x="127" y="13" width="239" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Configure in System Preferences" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="64">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openNotificationCenterPreferences:" target="-2" id="65"/>
+                    </connections>
+                </button>
+            </subviews>
+        </customView>
+    </objects>
+</document>

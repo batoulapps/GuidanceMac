@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BAGeneralPrefsViewController">
+            <connections>
+                <outlet property="arabicModeButton" destination="21" id="25"/>
+                <outlet property="displayIconButton" destination="bcJ-CF-FOp" id="D0c-ov-dA9"/>
+                <outlet property="displayNextPrayerButton" destination="11" id="27"/>
+                <outlet property="displayNextPrayerNameButton" destination="enD-uw-pbh" id="uVI-6J-ISA"/>
+                <outlet property="displayNextPrayerNameLabel" destination="fCo-sF-KaD" id="xQN-16-pfP"/>
+                <outlet property="displayNextPrayerTypeButton" destination="13" id="29"/>
+                <outlet property="displayNextPrayerTypeLabel" destination="19" id="31"/>
+                <outlet property="startAtLoginButton" destination="3" id="23"/>
+                <outlet property="view" destination="1" id="2"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="275"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                    <rect key="frame" x="40" y="33" width="169" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Start Guidance at Login" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="4">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleStartAtLogin:" target="-2" id="24"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21">
+                    <rect key="frame" x="40" y="63" width="140" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Arabic mode" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="22">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleArabicMode:" target="-2" id="26"/>
+                    </connections>
+                </button>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                    <rect key="frame" x="20" y="103" width="340" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                    <rect key="frame" x="40" y="232" width="225" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Display next prayer in menu bar" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="12">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleDisplayNextPrayer:" target="-2" id="28"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bcJ-CF-FOp">
+                    <rect key="frame" x="40" y="127" width="225" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="Display icon in menu bar" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="Ph3-04-Dem">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="toggleDisplayIcon:" target="-2" id="Sar-ja-omA"/>
+                    </connections>
+                </button>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13">
+                    <rect key="frame" x="156" y="193" width="199" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Countdown to next prayer" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="16" id="14">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <menu key="menu" title="OtherViews" autoenablesItems="NO" id="15">
+                            <items>
+                                <menuItem title="Countdown to next prayer" state="on" id="16"/>
+                                <menuItem title="Time of next prayer" id="17"/>
+                                <menuItem title="None" id="QwB-Sf-QNi"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeDisplayNextPrayerType:" target="-2" id="30"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                    <rect key="frame" x="60" y="198" width="87" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Prayer time:" id="20">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enD-uw-pbh">
+                    <rect key="frame" x="156" y="162" width="199" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <popUpButtonCell key="cell" type="push" title="Full name" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="B3T-3D-Sqe" id="suf-lK-TR6">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <menu key="menu" title="OtherViews" autoenablesItems="NO" id="2YF-Py-RwO">
+                            <items>
+                                <menuItem title="Full name" state="on" id="B3T-3D-Sqe"/>
+                                <menuItem title="Abbreviation" id="dAo-yd-zrE"/>
+                                <menuItem title="None" id="sI6-HE-Y5D"/>
+                            </items>
+                        </menu>
+                    </popUpButtonCell>
+                    <connections>
+                        <action selector="changeDisplayNextPrayerName:" target="-2" id="oQI-yU-7j9"/>
+                    </connections>
+                </popUpButton>
+                <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fCo-sF-KaD">
+                    <rect key="frame" x="60" y="167" width="86" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Prayer name:" id="15z-m5-f3N">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <point key="canvasLocation" x="139" y="205.5"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="j9h-7C-7Kk"/>
+    </objects>
+</document>

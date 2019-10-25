@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'Guidance' target in the 'Guidance' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+	#import "BAAppDelegate.h"
+    #import "Guidance-Swift.h"
+#endif
+
+#define BALocalizedString(key) NSLocalizedStringFromTableInBundle(key, nil, [Localizer bundle], comment)

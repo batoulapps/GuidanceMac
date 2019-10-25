@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  Guidance
+
+  Created by Ameir Al-Zoubi on 7/11/13.
+  Copyright (c) 2013 Batoul Apps. All rights reserved.
+*/
+
+/* Fajr Prayer */
+"Fajr" = "الفجر";
+
+/* Fajr Abbreviation */
+"F" = "فـ";
+
+/* Sunrise Time */
+"Sunrise" = "الإشراق";
+
+/* Sunrise Abbreviation */
+"S" = "شـ";
+
+/* Dhuhr Prayer */
+"Dhuhr" = "الظهر";
+
+/* Dhuhr Abbreviation */
+"D" = "ظـ";
+
+/* Asr Prayer */
+"Asr" = "العصر";
+
+/* Asr Abbreviation */
+"A" = "صـ";
+
+/* Maghrib Prayer */
+"Maghrib" = "المغرب";
+
+/* Maghrib Abbreviation */
+"M" = "مـ";
+
+/* Isha Prayer */
+"Isha" = "العشاء";
+
+/* Isha Abbreviation */
+"I" = "عـ";
+
+/* Jumuah Prayer */
+"Jumuah" = "الجمعة";
+
+/* Jummuah Abbreviation */
+"J" = "جـ";
+
+/* Hijri Suffix */
+"h" = "هـ";
+
+/* Alert message */
+"It's time for %@ (%@)" = "دخل وقت صلاة %@ (%@)\U200F";
+
+/* Fajr Reminder Message */
+"Fajr is in %@ minutes" = "أذان الفجر بعد %@ دقيقة";
+
+/* Shuruq Reminder Message */
+"Sunrise is in %@ minutes" = "الإشراق بعد %@ دقيقة";
