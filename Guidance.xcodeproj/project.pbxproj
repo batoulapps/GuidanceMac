@@ -3,827 +3,363 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46DFA7A148E4A97C4F58EB94 /* Pods_Guidance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FBAFC2093EAACDB6924EBF /* Pods_Guidance.framework */; };
-		840C4A8819415E3400C1F149 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840C4A8719415E3400C1F149 /* Accelerate.framework */; };
-		8429BA5B1DC58A0C00A45E21 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429BA5A1DC58A0C00A45E21 /* Formatter.swift */; };
-		8429BA5F1DC654A800A45E21 /* BASwifty.m in Sources */ = {isa = PBXBuildFile; fileRef = 8429BA5E1DC654A800A45E21 /* BASwifty.m */; };
-		8429BA611DC675C600A45E21 /* Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8429BA601DC675C600A45E21 /* Localizer.swift */; };
-		842C194D178E623000E78524 /* BALocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 842C194C178E622D00E78524 /* BALocalizer.m */; };
-		842C1955178E68A800E78524 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 842C1957178E68A800E78524 /* Localizable.strings */; };
-		842C195A178E6B0C00E78524 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842C1959178E6B0C00E78524 /* Settings.plist */; };
-		842D97BC1AC70A4900C559BF /* NSAttributedString+Guidance.m in Sources */ = {isa = PBXBuildFile; fileRef = 842D97BB1AC70A4900C559BF /* NSAttributedString+Guidance.m */; };
-		843E40AD195BD3C400CA7378 /* paused-green.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 843E40AC195BD3C400CA7378 /* paused-green.pdf */; };
-		844F2273195A7FE100A8F7F4 /* NSColor+Guidance.m in Sources */ = {isa = PBXBuildFile; fileRef = 844F2272195A7FE100A8F7F4 /* NSColor+Guidance.m */; };
-		8453BFE2191531C500B16224 /* settings-t.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFE0191531C500B16224 /* settings-t.pdf */; };
-		8453BFE3191531C500B16224 /* settings.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFE1191531C500B16224 /* settings.pdf */; };
-		8453BFE81915381A00B16224 /* paused.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFE41915381A00B16224 /* paused.pdf */; };
-		8453BFE91915381A00B16224 /* sound-off.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFE51915381A00B16224 /* sound-off.pdf */; };
-		8453BFEA1915381A00B16224 /* sound-on.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFE61915381A00B16224 /* sound-on.pdf */; };
-		8453BFEB1915381A00B16224 /* sound-pressed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFE71915381A00B16224 /* sound-pressed.pdf */; };
-		8453BFEE191539E900B16224 /* sound-off-white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFEC191539E900B16224 /* sound-off-white.pdf */; };
-		8453BFEF191539E900B16224 /* sound-on-white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFED191539E900B16224 /* sound-on-white.pdf */; };
-		8453BFF119153AC100B16224 /* sound-pressed-white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8453BFF019153AC100B16224 /* sound-pressed-white.pdf */; };
-		8453BFF7191579C900B16224 /* BASnapshotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453BFF6191579C900B16224 /* BASnapshotView.m */; };
-		84643EA81910AFB0008E8A9F /* BAConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 84643EA71910AFB0008E8A9F /* BAConstants.m */; };
-		846BB46A1784A86E0067703D /* BAPrayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BB4691784A86E0067703D /* BAPrayerWindow.m */; };
-		846BB4711784F3BD0067703D /* BABackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 846BB4701784F3BD0067703D /* BABackgroundView.m */; };
-		848E34D91886086A00FEDFB4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848E34D81886086A00FEDFB4 /* Security.framework */; };
-		848E34DB1886087100FEDFB4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848E34DA1886087100FEDFB4 /* SystemConfiguration.framework */; };
-		848E34DF18860DB600FEDFB4 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E34DE18860DB600FEDFB4 /* Media.xcassets */; };
-		8498E9D2190D9ED30082C76C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8498E9D1190D9ED30082C76C /* Quartz.framework */; };
-		84A3FB3A195FC7C200A64EA7 /* NSSound+Guidance.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3FB39195FC7C200A64EA7 /* NSSound+Guidance.m */; };
-		84A3FB3E195FC9ED00A64EA7 /* BAPrayerAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A3FB3D195FC9ED00A64EA7 /* BAPrayerAlert.m */; };
-		84A57B791964ED45006F9EFA /* pauseItunes.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 84A57B781964ED45006F9EFA /* pauseItunes.scpt */; };
-		84B97F97177943850004E4EA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B97F96177943850004E4EA /* Cocoa.framework */; };
-		84B97FA1177943850004E4EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84B97F9F177943850004E4EA /* InfoPlist.strings */; };
-		84B97FA3177943850004E4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B97FA2177943850004E4EA /* main.m */; };
-		84B97FAA177943850004E4EA /* BAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B97FA9177943850004E4EA /* BAAppDelegate.m */; };
-		84B97FAD177943850004E4EA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B97FAB177943850004E4EA /* MainMenu.xib */; };
-		84BC3A3F17867C3700B19555 /* BAGeneralPrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3A3D17867C3700B19555 /* BAGeneralPrefsViewController.m */; };
-		84BC3A4017867C3700B19555 /* BAGeneralPrefsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC3A3E17867C3700B19555 /* BAGeneralPrefsViewController.xib */; };
-		84BC3A471786805A00B19555 /* BALocationPrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3A451786805A00B19555 /* BALocationPrefsViewController.m */; };
-		84BC3A481786805A00B19555 /* BALocationPrefsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC3A461786805A00B19555 /* BALocationPrefsViewController.xib */; };
-		84BC3A4C1786870100B19555 /* BACalculationPrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3A4A1786870100B19555 /* BACalculationPrefsViewController.m */; };
-		84BC3A4D1786870100B19555 /* BACalculationPrefsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC3A4B1786870100B19555 /* BACalculationPrefsViewController.xib */; };
-		84BC3A511786872000B19555 /* BANotificationPrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3A4F1786872000B19555 /* BANotificationPrefsViewController.m */; };
-		84BC3A521786872000B19555 /* BANotificationPrefsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC3A501786872000B19555 /* BANotificationPrefsViewController.xib */; };
-		84BC3A561786873300B19555 /* BAAdvancedPrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC3A541786873300B19555 /* BAAdvancedPrefsViewController.m */; };
-		84BC3A571786873300B19555 /* BAAdvancedPrefsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC3A551786873300B19555 /* BAAdvancedPrefsViewController.xib */; };
-		84BC3A5C17868A7700B19555 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 84BC3A5E17868A7700B19555 /* Credits.rtf */; };
-		84C97D421942C69700FCC8CE /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C97D411942C69700FCC8CE /* ServiceManagement.framework */; };
-		84C97D941942CEDE00FCC8CE /* GuidanceLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84C97D931942CED700FCC8CE /* GuidanceLauncher.app */; };
-		84D561691779456D008A1C7F /* Adhan-Alafasy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 84D561571779456D008A1C7F /* Adhan-Alafasy.m4a */; };
-		84D5616A1779456D008A1C7F /* Adhan-Aqsa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84D561581779456D008A1C7F /* Adhan-Aqsa.mp3 */; };
-		84D5616B1779456D008A1C7F /* Adhan-Fajr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84D561591779456D008A1C7F /* Adhan-Fajr.mp3 */; };
-		84D5616C1779456D008A1C7F /* Adhan-Istanbul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84D5615A1779456D008A1C7F /* Adhan-Istanbul.mp3 */; };
-		84D5616D1779456D008A1C7F /* Adhan-Makkah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84D5615B1779456D008A1C7F /* Adhan-Makkah.mp3 */; };
-		84D5616E1779456D008A1C7F /* Adhan-Yusuf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84D5615C1779456D008A1C7F /* Adhan-Yusuf.mp3 */; };
-		84D5616F1779456D008A1C7F /* Dua.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 84D5615D1779456D008A1C7F /* Dua.m4a */; };
-		84E180A219185B4A00054DB7 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E180A119185B4A00054DB7 /* AddressBook.framework */; };
-		84E180A5191867BB00054DB7 /* BAPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E180A4191867BB00054DB7 /* BAPreferences.m */; };
-		84E6F45519684CC700A9218F /* BAVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E6F45419684CC700A9218F /* BAVerticallyCenteredTextFieldCell.m */; };
-		84EA0819177FE85900194F5A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EA0818177FE85900194F5A /* CoreLocation.framework */; };
-		84EA081C177FEA6100194F5A /* BALocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EA081B177FE8E100194F5A /* BALocationManager.m */; };
+		8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419951D238078F500B316F6 /* PrayerTimeController.swift */; };
+		846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C56A723804D5F006902A8 /* AppDelegate.swift */; };
+		846C56AA23804D60006902A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846C56A923804D60006902A8 /* Assets.xcassets */; };
+		846C56AD23804D60006902A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846C56AB23804D60006902A8 /* MainMenu.xib */; };
+		846C56B823804F60006902A8 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 846C56B723804F60006902A8 /* Adhan */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		84C97D921942CED700FCC8CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84C97D8E1942CED700FCC8CE /* GuidanceLauncher.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 84C97D4C1942CCD900FCC8CE;
-			remoteInfo = GuidanceLauncher;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		84C97D831942CD6400FCC8CE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
-			files = (
-				84C97D941942CEDE00FCC8CE /* GuidanceLauncher.app in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		0CB66E9EA99B75C72CA2852A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6B1E9DE360C1F730C4FB3B1F /* Pods-Guidance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Guidance/Pods-Guidance.debug.xcconfig"; sourceTree = "<group>"; };
-		840C4A8719415E3400C1F149 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		8429BA5A1DC58A0C00A45E21 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
-		8429BA5D1DC654A800A45E21 /* BASwifty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASwifty.h; sourceTree = "<group>"; };
-		8429BA5E1DC654A800A45E21 /* BASwifty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASwifty.m; sourceTree = "<group>"; };
-		8429BA601DC675C600A45E21 /* Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizer.swift; sourceTree = "<group>"; };
-		8429BA7F1DC6945900A45E21 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		842C194B178E622D00E78524 /* BALocalizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BALocalizer.h; sourceTree = "<group>"; };
-		842C194C178E622D00E78524 /* BALocalizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BALocalizer.m; sourceTree = "<group>"; };
-		842C1956178E68A800E78524 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		842C1959178E6B0C00E78524 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
-		842D97BA1AC70A4900C559BF /* NSAttributedString+Guidance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Guidance.h"; sourceTree = "<group>"; };
-		842D97BB1AC70A4900C559BF /* NSAttributedString+Guidance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Guidance.m"; sourceTree = "<group>"; };
-		843E40AC195BD3C400CA7378 /* paused-green.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "paused-green.pdf"; sourceTree = "<group>"; };
-		844F2271195A7FE100A8F7F4 /* NSColor+Guidance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+Guidance.h"; sourceTree = "<group>"; };
-		844F2272195A7FE100A8F7F4 /* NSColor+Guidance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+Guidance.m"; sourceTree = "<group>"; };
-		8453BFE0191531C500B16224 /* settings-t.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "settings-t.pdf"; sourceTree = "<group>"; };
-		8453BFE1191531C500B16224 /* settings.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = settings.pdf; sourceTree = "<group>"; };
-		8453BFE41915381A00B16224 /* paused.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = paused.pdf; sourceTree = "<group>"; };
-		8453BFE51915381A00B16224 /* sound-off.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sound-off.pdf"; sourceTree = "<group>"; };
-		8453BFE61915381A00B16224 /* sound-on.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sound-on.pdf"; sourceTree = "<group>"; };
-		8453BFE71915381A00B16224 /* sound-pressed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sound-pressed.pdf"; sourceTree = "<group>"; };
-		8453BFEC191539E900B16224 /* sound-off-white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sound-off-white.pdf"; sourceTree = "<group>"; };
-		8453BFED191539E900B16224 /* sound-on-white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sound-on-white.pdf"; sourceTree = "<group>"; };
-		8453BFF019153AC100B16224 /* sound-pressed-white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sound-pressed-white.pdf"; sourceTree = "<group>"; };
-		8453BFF5191579C900B16224 /* BASnapshotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASnapshotView.h; sourceTree = "<group>"; };
-		8453BFF6191579C900B16224 /* BASnapshotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASnapshotView.m; sourceTree = "<group>"; };
-		84643EA61910AFB0008E8A9F /* BAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAConstants.h; sourceTree = "<group>"; };
-		84643EA71910AFB0008E8A9F /* BAConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAConstants.m; sourceTree = "<group>"; };
-		846BB4681784A86E0067703D /* BAPrayerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPrayerWindow.h; sourceTree = "<group>"; };
-		846BB4691784A86E0067703D /* BAPrayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPrayerWindow.m; sourceTree = "<group>"; };
-		846BB46F1784F3BD0067703D /* BABackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BABackgroundView.h; sourceTree = "<group>"; };
-		846BB4701784F3BD0067703D /* BABackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BABackgroundView.m; sourceTree = "<group>"; };
-		848E34D81886086A00FEDFB4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		848E34DA1886087100FEDFB4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		848E34DE18860DB600FEDFB4 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../Media.xcassets; sourceTree = "<group>"; };
-		8498E9D1190D9ED30082C76C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
-		84A3FB38195FC7C200A64EA7 /* NSSound+Guidance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSound+Guidance.h"; sourceTree = "<group>"; };
-		84A3FB39195FC7C200A64EA7 /* NSSound+Guidance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSound+Guidance.m"; sourceTree = "<group>"; };
-		84A3FB3C195FC9ED00A64EA7 /* BAPrayerAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPrayerAlert.h; sourceTree = "<group>"; };
-		84A3FB3D195FC9ED00A64EA7 /* BAPrayerAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPrayerAlert.m; sourceTree = "<group>"; };
-		84A52B4B1989E0AA00AC1390 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		84A57B781964ED45006F9EFA /* pauseItunes.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = pauseItunes.scpt; sourceTree = "<group>"; };
-		84B28FBC17848F08000EBAD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		84B97F93177943850004E4EA /* Guidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84B97F96177943850004E4EA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		84B97F99177943850004E4EA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		84B97F9A177943850004E4EA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		84B97F9B177943850004E4EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		84B97F9E177943850004E4EA /* Guidance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Guidance-Info.plist"; sourceTree = "<group>"; };
-		84B97FA0177943850004E4EA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84B97FA2177943850004E4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84B97FA4177943850004E4EA /* Guidance-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guidance-Prefix.pch"; sourceTree = "<group>"; };
-		84B97FA8177943850004E4EA /* BAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAAppDelegate.h; sourceTree = "<group>"; };
-		84B97FA9177943850004E4EA /* BAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAAppDelegate.m; sourceTree = "<group>"; };
-		84B97FAC177943850004E4EA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		84BC3A3C17867C3700B19555 /* BAGeneralPrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGeneralPrefsViewController.h; sourceTree = "<group>"; };
-		84BC3A3D17867C3700B19555 /* BAGeneralPrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGeneralPrefsViewController.m; sourceTree = "<group>"; };
-		84BC3A3E17867C3700B19555 /* BAGeneralPrefsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAGeneralPrefsViewController.xib; sourceTree = "<group>"; };
-		84BC3A441786805A00B19555 /* BALocationPrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BALocationPrefsViewController.h; sourceTree = "<group>"; };
-		84BC3A451786805A00B19555 /* BALocationPrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BALocationPrefsViewController.m; sourceTree = "<group>"; };
-		84BC3A461786805A00B19555 /* BALocationPrefsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BALocationPrefsViewController.xib; sourceTree = "<group>"; };
-		84BC3A491786870100B19555 /* BACalculationPrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BACalculationPrefsViewController.h; sourceTree = "<group>"; };
-		84BC3A4A1786870100B19555 /* BACalculationPrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BACalculationPrefsViewController.m; sourceTree = "<group>"; };
-		84BC3A4B1786870100B19555 /* BACalculationPrefsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BACalculationPrefsViewController.xib; sourceTree = "<group>"; };
-		84BC3A4E1786872000B19555 /* BANotificationPrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANotificationPrefsViewController.h; sourceTree = "<group>"; };
-		84BC3A4F1786872000B19555 /* BANotificationPrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANotificationPrefsViewController.m; sourceTree = "<group>"; };
-		84BC3A501786872000B19555 /* BANotificationPrefsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BANotificationPrefsViewController.xib; sourceTree = "<group>"; };
-		84BC3A531786873300B19555 /* BAAdvancedPrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAAdvancedPrefsViewController.h; sourceTree = "<group>"; };
-		84BC3A541786873300B19555 /* BAAdvancedPrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAAdvancedPrefsViewController.m; sourceTree = "<group>"; };
-		84BC3A551786873300B19555 /* BAAdvancedPrefsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BAAdvancedPrefsViewController.xib; sourceTree = "<group>"; };
-		84BC3A5D17868A7700B19555 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		84C271FC1DB70B170024BF6D /* Guidance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Guidance-Bridging-Header.h"; path = "Classes/Guidance-Bridging-Header.h"; sourceTree = "<group>"; };
-		84C97D411942C69700FCC8CE /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		84C97D8E1942CED700FCC8CE /* GuidanceLauncher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GuidanceLauncher.xcodeproj; path = GuidanceLauncher/GuidanceLauncher.xcodeproj; sourceTree = "<group>"; };
-		84D561571779456D008A1C7F /* Adhan-Alafasy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adhan-Alafasy.m4a"; sourceTree = "<group>"; };
-		84D561581779456D008A1C7F /* Adhan-Aqsa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adhan-Aqsa.mp3"; sourceTree = "<group>"; };
-		84D561591779456D008A1C7F /* Adhan-Fajr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adhan-Fajr.mp3"; sourceTree = "<group>"; };
-		84D5615A1779456D008A1C7F /* Adhan-Istanbul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adhan-Istanbul.mp3"; sourceTree = "<group>"; };
-		84D5615B1779456D008A1C7F /* Adhan-Makkah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adhan-Makkah.mp3"; sourceTree = "<group>"; };
-		84D5615C1779456D008A1C7F /* Adhan-Yusuf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adhan-Yusuf.mp3"; sourceTree = "<group>"; };
-		84D5615D1779456D008A1C7F /* Dua.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dua.m4a; sourceTree = "<group>"; };
-		84E180A119185B4A00054DB7 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		84E180A3191867BB00054DB7 /* BAPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAPreferences.h; sourceTree = "<group>"; };
-		84E180A4191867BB00054DB7 /* BAPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAPreferences.m; sourceTree = "<group>"; };
-		84E6F45319684CC700A9218F /* BAVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
-		84E6F45419684CC700A9218F /* BAVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
-		84EA0818177FE85900194F5A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		84EA081A177FE8E100194F5A /* BALocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BALocationManager.h; sourceTree = "<group>"; };
-		84EA081B177FE8E100194F5A /* BALocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BALocationManager.m; sourceTree = "<group>"; };
-		84F52ECE1943A10F007540A2 /* Guidance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Guidance.entitlements; sourceTree = "<group>"; };
-		B53E036044AB26C5D3835334 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		C1FBAFC2093EAACDB6924EBF /* Pods_Guidance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guidance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6A032525843405E93C4FF3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFB1644DF0A450F5ABB8D075 /* Pods-Guidance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guidance.release.xcconfig"; path = "Pods/Target Support Files/Pods-Guidance/Pods-Guidance.release.xcconfig"; sourceTree = "<group>"; };
+		8419951D238078F500B316F6 /* PrayerTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeController.swift; sourceTree = "<group>"; };
+		846C56A423804D5F006902A8 /* Guidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		846C56A723804D5F006902A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		846C56A923804D60006902A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846C56AC23804D60006902A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		846C56AE23804D60006902A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846C56AF23804D60006902A8 /* Guidance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guidance.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		84B97F90177943850004E4EA /* Frameworks */ = {
+		846C56A123804D5F006902A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C97D421942C69700FCC8CE /* ServiceManagement.framework in Frameworks */,
-				840C4A8819415E3400C1F149 /* Accelerate.framework in Frameworks */,
-				84E180A219185B4A00054DB7 /* AddressBook.framework in Frameworks */,
-				8498E9D2190D9ED30082C76C /* Quartz.framework in Frameworks */,
-				848E34DB1886087100FEDFB4 /* SystemConfiguration.framework in Frameworks */,
-				848E34D91886086A00FEDFB4 /* Security.framework in Frameworks */,
-				84EA0819177FE85900194F5A /* CoreLocation.framework in Frameworks */,
-				84B97F97177943850004E4EA /* Cocoa.framework in Frameworks */,
-				46DFA7A148E4A97C4F58EB94 /* Pods_Guidance.framework in Frameworks */,
+				846C56B823804F60006902A8 /* Adhan in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		844F226F195A7F9F00A8F7F4 /* Categories */ = {
+		846C569B23804D5F006902A8 = {
 			isa = PBXGroup;
 			children = (
-				844F2271195A7FE100A8F7F4 /* NSColor+Guidance.h */,
-				844F2272195A7FE100A8F7F4 /* NSColor+Guidance.m */,
-				84A3FB38195FC7C200A64EA7 /* NSSound+Guidance.h */,
-				84A3FB39195FC7C200A64EA7 /* NSSound+Guidance.m */,
-				842D97BA1AC70A4900C559BF /* NSAttributedString+Guidance.h */,
-				842D97BB1AC70A4900C559BF /* NSAttributedString+Guidance.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		8453BFDF191531C500B16224 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				843E40AC195BD3C400CA7378 /* paused-green.pdf */,
-				8453BFE41915381A00B16224 /* paused.pdf */,
-				8453BFE51915381A00B16224 /* sound-off.pdf */,
-				8453BFE61915381A00B16224 /* sound-on.pdf */,
-				8453BFE71915381A00B16224 /* sound-pressed.pdf */,
-				8453BFEC191539E900B16224 /* sound-off-white.pdf */,
-				8453BFED191539E900B16224 /* sound-on-white.pdf */,
-				8453BFF019153AC100B16224 /* sound-pressed-white.pdf */,
-				8453BFE0191531C500B16224 /* settings-t.pdf */,
-				8453BFE1191531C500B16224 /* settings.pdf */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		84B97F8A177943850004E4EA = {
-			isa = PBXGroup;
-			children = (
-				84B97F9C177943850004E4EA /* Guidance */,
-				84B97F95177943850004E4EA /* Frameworks */,
-				84B97F94177943850004E4EA /* Products */,
-				84C97D8E1942CED700FCC8CE /* GuidanceLauncher.xcodeproj */,
-				E9EF3E133FF65FAA5EE1D107 /* Pods */,
+				846C56A623804D5F006902A8 /* Guidance */,
+				846C56A523804D5F006902A8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		84B97F94177943850004E4EA /* Products */ = {
+		846C56A523804D5F006902A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84B97F93177943850004E4EA /* Guidance.app */,
+				846C56A423804D5F006902A8 /* Guidance.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84B97F95177943850004E4EA /* Frameworks */ = {
+		846C56A623804D5F006902A8 /* Guidance */ = {
 			isa = PBXGroup;
 			children = (
-				84C97D411942C69700FCC8CE /* ServiceManagement.framework */,
-				840C4A8719415E3400C1F149 /* Accelerate.framework */,
-				84E180A119185B4A00054DB7 /* AddressBook.framework */,
-				8498E9D1190D9ED30082C76C /* Quartz.framework */,
-				848E34DA1886087100FEDFB4 /* SystemConfiguration.framework */,
-				848E34D81886086A00FEDFB4 /* Security.framework */,
-				84B28FBC17848F08000EBAD7 /* CoreGraphics.framework */,
-				84EA0818177FE85900194F5A /* CoreLocation.framework */,
-				84B97F96177943850004E4EA /* Cocoa.framework */,
-				84B97F98177943850004E4EA /* Other Frameworks */,
-				C6A032525843405E93C4FF3B /* libPods.a */,
-				C1FBAFC2093EAACDB6924EBF /* Pods_Guidance.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		84B97F98177943850004E4EA /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				84B97F99177943850004E4EA /* AppKit.framework */,
-				84B97F9A177943850004E4EA /* CoreData.framework */,
-				84B97F9B177943850004E4EA /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
-		84B97F9C177943850004E4EA /* Guidance */ = {
-			isa = PBXGroup;
-			children = (
-				84F52ECE1943A10F007540A2 /* Guidance.entitlements */,
-				84C271FC1DB70B170024BF6D /* Guidance-Bridging-Header.h */,
-				8429BA5D1DC654A800A45E21 /* BASwifty.h */,
-				8429BA5E1DC654A800A45E21 /* BASwifty.m */,
-				84B97FA8177943850004E4EA /* BAAppDelegate.h */,
-				84B97FA9177943850004E4EA /* BAAppDelegate.m */,
-				84B97FAB177943850004E4EA /* MainMenu.xib */,
-				844F226F195A7F9F00A8F7F4 /* Categories */,
-				84BC3A4317867FC000B19555 /* Classes */,
-				84BC3A4217867F9B00B19555 /* Views */,
-				84BC3A4117867F6100B19555 /* Preferences */,
-				84D561551779456D008A1C7F /* Resources */,
-				84B97F9D177943850004E4EA /* Supporting Files */,
+				846C56A723804D5F006902A8 /* AppDelegate.swift */,
+				8419951D238078F500B316F6 /* PrayerTimeController.swift */,
+				846C56A923804D60006902A8 /* Assets.xcassets */,
+				846C56AB23804D60006902A8 /* MainMenu.xib */,
+				846C56AE23804D60006902A8 /* Info.plist */,
+				846C56AF23804D60006902A8 /* Guidance.entitlements */,
 			);
 			path = Guidance;
-			sourceTree = "<group>";
-		};
-		84B97F9D177943850004E4EA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				848E34DE18860DB600FEDFB4 /* Media.xcassets */,
-				84B97F9E177943850004E4EA /* Guidance-Info.plist */,
-				84B97F9F177943850004E4EA /* InfoPlist.strings */,
-				84B97FA2177943850004E4EA /* main.m */,
-				84B97FA4177943850004E4EA /* Guidance-Prefix.pch */,
-				84BC3A5E17868A7700B19555 /* Credits.rtf */,
-				842C1957178E68A800E78524 /* Localizable.strings */,
-				842C1959178E6B0C00E78524 /* Settings.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		84BC3A4117867F6100B19555 /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				84BC3A3C17867C3700B19555 /* BAGeneralPrefsViewController.h */,
-				84BC3A3D17867C3700B19555 /* BAGeneralPrefsViewController.m */,
-				84BC3A3E17867C3700B19555 /* BAGeneralPrefsViewController.xib */,
-				84BC3A441786805A00B19555 /* BALocationPrefsViewController.h */,
-				84BC3A451786805A00B19555 /* BALocationPrefsViewController.m */,
-				84BC3A461786805A00B19555 /* BALocationPrefsViewController.xib */,
-				84BC3A491786870100B19555 /* BACalculationPrefsViewController.h */,
-				84BC3A4A1786870100B19555 /* BACalculationPrefsViewController.m */,
-				84BC3A4B1786870100B19555 /* BACalculationPrefsViewController.xib */,
-				84BC3A4E1786872000B19555 /* BANotificationPrefsViewController.h */,
-				84BC3A4F1786872000B19555 /* BANotificationPrefsViewController.m */,
-				84BC3A501786872000B19555 /* BANotificationPrefsViewController.xib */,
-				84BC3A531786873300B19555 /* BAAdvancedPrefsViewController.h */,
-				84BC3A541786873300B19555 /* BAAdvancedPrefsViewController.m */,
-				84BC3A551786873300B19555 /* BAAdvancedPrefsViewController.xib */,
-			);
-			path = Preferences;
-			sourceTree = "<group>";
-		};
-		84BC3A4217867F9B00B19555 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				846BB4681784A86E0067703D /* BAPrayerWindow.h */,
-				846BB4691784A86E0067703D /* BAPrayerWindow.m */,
-				846BB46F1784F3BD0067703D /* BABackgroundView.h */,
-				846BB4701784F3BD0067703D /* BABackgroundView.m */,
-				8453BFF5191579C900B16224 /* BASnapshotView.h */,
-				8453BFF6191579C900B16224 /* BASnapshotView.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		84BC3A4317867FC000B19555 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				84EA081A177FE8E100194F5A /* BALocationManager.h */,
-				84EA081B177FE8E100194F5A /* BALocationManager.m */,
-				842C194B178E622D00E78524 /* BALocalizer.h */,
-				842C194C178E622D00E78524 /* BALocalizer.m */,
-				84643EA61910AFB0008E8A9F /* BAConstants.h */,
-				84643EA71910AFB0008E8A9F /* BAConstants.m */,
-				84E180A3191867BB00054DB7 /* BAPreferences.h */,
-				84E180A4191867BB00054DB7 /* BAPreferences.m */,
-				84A3FB3C195FC9ED00A64EA7 /* BAPrayerAlert.h */,
-				84A3FB3D195FC9ED00A64EA7 /* BAPrayerAlert.m */,
-				84E6F45319684CC700A9218F /* BAVerticallyCenteredTextFieldCell.h */,
-				84E6F45419684CC700A9218F /* BAVerticallyCenteredTextFieldCell.m */,
-				8429BA5A1DC58A0C00A45E21 /* Formatter.swift */,
-				8429BA601DC675C600A45E21 /* Localizer.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		84C97D8F1942CED700FCC8CE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				84C97D931942CED700FCC8CE /* GuidanceLauncher.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		84D561551779456D008A1C7F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				84A57B781964ED45006F9EFA /* pauseItunes.scpt */,
-				8453BFDF191531C500B16224 /* Images */,
-				84D561561779456D008A1C7F /* Audio */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		84D561561779456D008A1C7F /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				84D561571779456D008A1C7F /* Adhan-Alafasy.m4a */,
-				84D561581779456D008A1C7F /* Adhan-Aqsa.mp3 */,
-				84D561591779456D008A1C7F /* Adhan-Fajr.mp3 */,
-				84D5615A1779456D008A1C7F /* Adhan-Istanbul.mp3 */,
-				84D5615B1779456D008A1C7F /* Adhan-Makkah.mp3 */,
-				84D5615C1779456D008A1C7F /* Adhan-Yusuf.mp3 */,
-				84D5615D1779456D008A1C7F /* Dua.m4a */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
-		E9EF3E133FF65FAA5EE1D107 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B53E036044AB26C5D3835334 /* Pods.debug.xcconfig */,
-				0CB66E9EA99B75C72CA2852A /* Pods.release.xcconfig */,
-				6B1E9DE360C1F730C4FB3B1F /* Pods-Guidance.debug.xcconfig */,
-				DFB1644DF0A450F5ABB8D075 /* Pods-Guidance.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84B97F92177943850004E4EA /* Guidance */ = {
+		846C56A323804D5F006902A8 /* Guidance */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84B97FB0177943850004E4EA /* Build configuration list for PBXNativeTarget "Guidance" */;
+			buildConfigurationList = 846C56B223804D60006902A8 /* Build configuration list for PBXNativeTarget "Guidance" */;
 			buildPhases = (
-				1E567CA9DF87471194EBB552 /* [CP] Check Pods Manifest.lock */,
-				84455D8C196B843E005365A6 /* ShellScript */,
-				84B97F8F177943850004E4EA /* Sources */,
-				84B97F90177943850004E4EA /* Frameworks */,
-				84B97F91177943850004E4EA /* Resources */,
-				84C97D831942CD6400FCC8CE /* CopyFiles */,
-				2F9174089387F7AC33B46E73 /* [CP] Embed Pods Frameworks */,
+				846C56A023804D5F006902A8 /* Sources */,
+				846C56A123804D5F006902A8 /* Frameworks */,
+				846C56A223804D5F006902A8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Guidance;
+			packageProductDependencies = (
+				846C56B723804F60006902A8 /* Adhan */,
+			);
 			productName = Guidance;
-			productReference = 84B97F93177943850004E4EA /* Guidance.app */;
+			productReference = 846C56A423804D5F006902A8 /* Guidance.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		84B97F8B177943850004E4EA /* Project object */ = {
+		846C569C23804D5F006902A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = BA;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Batoul Apps";
 				TargetAttributes = {
-					84B97F92177943850004E4EA = {
-						DevelopmentTeam = 5H3PBG23RV;
-						LastSwiftMigration = 0800;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 1;
-							};
-						};
+					846C56A323804D5F006902A8 = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 84B97F8E177943850004E4EA /* Build configuration list for PBXProject "Guidance" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 846C569F23804D5F006902A8 /* Build configuration list for PBXProject "Guidance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
-				ar,
-				fr,
-				de,
-				sv,
-				es,
-				nl,
+				Base,
 			);
-			mainGroup = 84B97F8A177943850004E4EA;
-			productRefGroup = 84B97F94177943850004E4EA /* Products */;
+			mainGroup = 846C569B23804D5F006902A8;
+			packageReferences = (
+				846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */,
+			);
+			productRefGroup = 846C56A523804D5F006902A8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 84C97D8F1942CED700FCC8CE /* Products */;
-					ProjectRef = 84C97D8E1942CED700FCC8CE /* GuidanceLauncher.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				84B97F92177943850004E4EA /* Guidance */,
+				846C56A323804D5F006902A8 /* Guidance */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		84C97D931942CED700FCC8CE /* GuidanceLauncher.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = GuidanceLauncher.app;
-			remoteRef = 84C97D921942CED700FCC8CE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		84B97F91177943850004E4EA /* Resources */ = {
+		846C56A223804D5F006902A8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B97FA1177943850004E4EA /* InfoPlist.strings in Resources */,
-				84B97FAD177943850004E4EA /* MainMenu.xib in Resources */,
-				84D561691779456D008A1C7F /* Adhan-Alafasy.m4a in Resources */,
-				84D5616A1779456D008A1C7F /* Adhan-Aqsa.mp3 in Resources */,
-				8453BFE2191531C500B16224 /* settings-t.pdf in Resources */,
-				84D5616B1779456D008A1C7F /* Adhan-Fajr.mp3 in Resources */,
-				84D5616C1779456D008A1C7F /* Adhan-Istanbul.mp3 in Resources */,
-				84D5616D1779456D008A1C7F /* Adhan-Makkah.mp3 in Resources */,
-				8453BFEB1915381A00B16224 /* sound-pressed.pdf in Resources */,
-				84D5616E1779456D008A1C7F /* Adhan-Yusuf.mp3 in Resources */,
-				84D5616F1779456D008A1C7F /* Dua.m4a in Resources */,
-				848E34DF18860DB600FEDFB4 /* Media.xcassets in Resources */,
-				8453BFE81915381A00B16224 /* paused.pdf in Resources */,
-				84BC3A4017867C3700B19555 /* BAGeneralPrefsViewController.xib in Resources */,
-				84BC3A481786805A00B19555 /* BALocationPrefsViewController.xib in Resources */,
-				84BC3A4D1786870100B19555 /* BACalculationPrefsViewController.xib in Resources */,
-				8453BFE91915381A00B16224 /* sound-off.pdf in Resources */,
-				84BC3A521786872000B19555 /* BANotificationPrefsViewController.xib in Resources */,
-				8453BFEF191539E900B16224 /* sound-on-white.pdf in Resources */,
-				84BC3A571786873300B19555 /* BAAdvancedPrefsViewController.xib in Resources */,
-				843E40AD195BD3C400CA7378 /* paused-green.pdf in Resources */,
-				8453BFF119153AC100B16224 /* sound-pressed-white.pdf in Resources */,
-				84BC3A5C17868A7700B19555 /* Credits.rtf in Resources */,
-				8453BFE3191531C500B16224 /* settings.pdf in Resources */,
-				842C1955178E68A800E78524 /* Localizable.strings in Resources */,
-				842C195A178E6B0C00E78524 /* Settings.plist in Resources */,
-				8453BFEE191539E900B16224 /* sound-off-white.pdf in Resources */,
-				84A57B791964ED45006F9EFA /* pauseItunes.scpt in Resources */,
-				8453BFEA1915381A00B16224 /* sound-on.pdf in Resources */,
+				846C56AA23804D60006902A8 /* Assets.xcassets in Resources */,
+				846C56AD23804D60006902A8 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1E567CA9DF87471194EBB552 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Guidance-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2F9174089387F7AC33B46E73 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Guidance/Pods-Guidance-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Adhan/Adhan.framework",
-				"${BUILT_PRODUCTS_DIR}/MASPreferences/MASPreferences.framework",
-				"${BUILT_PRODUCTS_DIR}/StartAtLoginController/StartAtLoginController.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Adhan.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MASPreferences.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StartAtLoginController.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guidance/Pods-Guidance-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		84455D8C196B843E005365A6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#Update build number with number of git commits if in release mode\nif [ ${CONFIGURATION} == \"Release\" ]; then\nbuildNumber=$(git rev-list HEAD | wc -l | tr -d ' ')\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\nfi;\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		84B97F8F177943850004E4EA /* Sources */ = {
+		846C56A023804D5F006902A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B97FA3177943850004E4EA /* main.m in Sources */,
-				84B97FAA177943850004E4EA /* BAAppDelegate.m in Sources */,
-				84EA081C177FEA6100194F5A /* BALocationManager.m in Sources */,
-				8429BA5B1DC58A0C00A45E21 /* Formatter.swift in Sources */,
-				846BB46A1784A86E0067703D /* BAPrayerWindow.m in Sources */,
-				846BB4711784F3BD0067703D /* BABackgroundView.m in Sources */,
-				84BC3A3F17867C3700B19555 /* BAGeneralPrefsViewController.m in Sources */,
-				84BC3A471786805A00B19555 /* BALocationPrefsViewController.m in Sources */,
-				8429BA5F1DC654A800A45E21 /* BASwifty.m in Sources */,
-				842D97BC1AC70A4900C559BF /* NSAttributedString+Guidance.m in Sources */,
-				84E6F45519684CC700A9218F /* BAVerticallyCenteredTextFieldCell.m in Sources */,
-				84BC3A4C1786870100B19555 /* BACalculationPrefsViewController.m in Sources */,
-				84BC3A511786872000B19555 /* BANotificationPrefsViewController.m in Sources */,
-				84E180A5191867BB00054DB7 /* BAPreferences.m in Sources */,
-				84A3FB3A195FC7C200A64EA7 /* NSSound+Guidance.m in Sources */,
-				84BC3A561786873300B19555 /* BAAdvancedPrefsViewController.m in Sources */,
-				8453BFF7191579C900B16224 /* BASnapshotView.m in Sources */,
-				8429BA611DC675C600A45E21 /* Localizer.swift in Sources */,
-				84A3FB3E195FC9ED00A64EA7 /* BAPrayerAlert.m in Sources */,
-				842C194D178E623000E78524 /* BALocalizer.m in Sources */,
-				84643EA81910AFB0008E8A9F /* BAConstants.m in Sources */,
-				844F2273195A7FE100A8F7F4 /* NSColor+Guidance.m in Sources */,
+				846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */,
+				8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		842C1957178E68A800E78524 /* Localizable.strings */ = {
+		846C56AB23804D60006902A8 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				842C1956178E68A800E78524 /* en */,
-				84A52B4B1989E0AA00AC1390 /* fr */,
-				8429BA7F1DC6945900A45E21 /* ar */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		84B97F9F177943850004E4EA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84B97FA0177943850004E4EA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		84B97FAB177943850004E4EA /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84B97FAC177943850004E4EA /* en */,
+				846C56AC23804D60006902A8 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		84BC3A5E17868A7700B19555 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84BC3A5D17868A7700B19555 /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		84B97FAE177943850004E4EA /* Debug */ = {
+		846C56B023804D60006902A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		84B97FAF177943850004E4EA /* Release */ = {
+		846C56B123804D60006902A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		84B97FB1177943850004E4EA /* Debug */ = {
+		846C56B323804D60006902A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B1E9DE360C1F730C4FB3B1F /* Pods-Guidance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Guidance/Guidance.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 147;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Guidance/Guidance-Prefix.pch";
-				INFOPLIST_FILE = "Guidance/Guidance-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Guidance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 2.0.9;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.batoulapps.GuidanceMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Guidance/Classes/Guidance-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		84B97FB2177943850004E4EA /* Release */ = {
+		846C56B423804D60006902A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFB1644DF0A450F5ABB8D075 /* Pods-Guidance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Guidance/Guidance.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 147;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Guidance/Guidance-Prefix.pch";
-				INFOPLIST_FILE = "Guidance/Guidance-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Guidance/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 2.0.9;
+				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.batoulapps.GuidanceMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Guidance/Classes/Guidance-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84B97F8E177943850004E4EA /* Build configuration list for PBXProject "Guidance" */ = {
+		846C569F23804D5F006902A8 /* Build configuration list for PBXProject "Guidance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84B97FAE177943850004E4EA /* Debug */,
-				84B97FAF177943850004E4EA /* Release */,
+				846C56B023804D60006902A8 /* Debug */,
+				846C56B123804D60006902A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84B97FB0177943850004E4EA /* Build configuration list for PBXNativeTarget "Guidance" */ = {
+		846C56B223804D60006902A8 /* Build configuration list for PBXNativeTarget "Guidance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				84B97FB1177943850004E4EA /* Debug */,
-				84B97FB2177943850004E4EA /* Release */,
+				846C56B323804D60006902A8 /* Debug */,
+				846C56B423804D60006902A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/batoulapps/adhan-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		846C56B723804F60006902A8 /* Adhan */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			productName = Adhan;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 84B97F8B177943850004E4EA /* Project object */;
+	rootObject = 846C569C23804D5F006902A8 /* Project object */;
 }

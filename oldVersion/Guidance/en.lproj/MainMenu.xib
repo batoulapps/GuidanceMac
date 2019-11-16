@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1080" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -11,7 +12,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
                 <menuItem title="Guidance" id="56">
@@ -650,6 +651,7 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="139" y="154"/>
         </menu>
         <customObject id="494" customClass="BAAppDelegate">
             <connections>
@@ -680,25 +682,25 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="538" customClass="BAPrayerWindow">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="538" customClass="BAPrayerWindow">
             <windowStyleMask key="styleMask" utility="YES" nonactivatingPanel="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="167" y="107" width="232" height="375"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="539" customClass="BABackgroundView">
                 <rect key="frame" x="0.0" y="0.0" width="232" height="375"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView id="Zi6-YQ-fxA" customClass="BASnapshotView">
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zi6-YQ-fxA" customClass="BASnapshotView">
                         <rect key="frame" x="0.0" y="286" width="232" height="89"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
-                    <imageView id="K3N-f8-TCO">
+                    <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K3N-f8-TCO">
                         <rect key="frame" x="0.0" y="103" width="232" height="34"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="highlight-green" id="bZZ-Q2-a74"/>
                     </imageView>
-                    <button focusRingType="none" id="549">
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="549">
                         <rect key="frame" x="10" y="15" width="26" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="settings" imagePosition="only" alignment="center" alternateImage="settings-t" focusRingType="none" inset="2" id="550">
@@ -709,7 +711,7 @@
                             <action selector="showSettingsMenu:" target="494" id="552"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="570">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="570">
                         <rect key="frame" x="10" y="239" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="-:-- am" id="571" customClass="BAVerticallyCenteredTextFieldCell">
@@ -718,7 +720,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="568">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="568">
                         <rect key="frame" x="10" y="239" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Fajr" id="569" customClass="BAVerticallyCenteredTextFieldCell">
@@ -727,7 +729,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button focusRingType="none" id="3Ei-up-mvw">
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ei-up-mvw">
                         <rect key="frame" x="104" y="244" width="24" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="sound-off" imagePosition="only" alignment="center" alternateImage="sound-pressed" focusRingType="none" inset="2" id="Uvh-X6-5ea">
@@ -738,7 +740,7 @@
                             <action selector="toggleFajrAdhan:" target="494" id="duD-Py-GqD"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="575">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="575">
                         <rect key="frame" x="10" y="205" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="-:-- am" id="576" customClass="BAVerticallyCenteredTextFieldCell">
@@ -747,7 +749,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="574">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="574">
                         <rect key="frame" x="10" y="205" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sunrise" id="577" customClass="BAVerticallyCenteredTextFieldCell">
@@ -756,7 +758,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button focusRingType="none" id="X10-eb-a7v">
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X10-eb-a7v">
                         <rect key="frame" x="104" y="210" width="24" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="sound-off" imagePosition="only" alignment="center" alternateImage="sound-pressed" focusRingType="none" inset="2" id="AXo-t2-K2o">
@@ -767,7 +769,7 @@
                             <action selector="toggleShuruqAdhan:" target="494" id="d2x-Gw-Zh7"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="579">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="579">
                         <rect key="frame" x="10" y="171" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="-:-- pm" id="580" customClass="BAVerticallyCenteredTextFieldCell">
@@ -776,7 +778,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="578">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="578">
                         <rect key="frame" x="10" y="171" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dhuhr" id="581" customClass="BAVerticallyCenteredTextFieldCell">
@@ -785,7 +787,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button focusRingType="none" id="GL1-yQ-upj">
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-yQ-upj">
                         <rect key="frame" x="104" y="176" width="24" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="sound-off" imagePosition="only" alignment="center" alternateImage="sound-pressed" focusRingType="none" inset="2" id="cqg-zi-98n">
@@ -796,7 +798,7 @@
                             <action selector="toggleDhuhrAdhan:" target="494" id="zkn-j9-nMr"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="583">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="583">
                         <rect key="frame" x="10" y="137" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="-:-- pm" id="584" customClass="BAVerticallyCenteredTextFieldCell">
@@ -805,7 +807,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="582">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="582">
                         <rect key="frame" x="10" y="137" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Asr" id="585" customClass="BAVerticallyCenteredTextFieldCell">
@@ -814,7 +816,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button focusRingType="none" id="GBB-mb-CRY">
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GBB-mb-CRY">
                         <rect key="frame" x="104" y="142" width="24" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="sound-off" imagePosition="only" alignment="center" alternateImage="sound-pressed" focusRingType="none" inset="2" id="dKg-qY-Idz">
@@ -825,7 +827,7 @@
                             <action selector="toggleAsrAdhan:" target="494" id="BoI-4C-N5M"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="587">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="587">
                         <rect key="frame" x="10" y="103" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="-:-- pm" id="588" customClass="BAVerticallyCenteredTextFieldCell">
@@ -834,7 +836,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="586">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="586">
                         <rect key="frame" x="10" y="103" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Maghrib" id="589" customClass="BAVerticallyCenteredTextFieldCell">
@@ -843,7 +845,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button focusRingType="none" id="oWg-05-lBX">
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWg-05-lBX">
                         <rect key="frame" x="104" y="108" width="24" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="sound-off" imagePosition="only" alignment="center" alternateImage="sound-pressed-white" focusRingType="none" inset="2" id="NGb-rf-A2e">
@@ -854,7 +856,7 @@
                             <action selector="toggleMaghribAdhan:" target="494" id="nkX-Yn-F1l"/>
                         </connections>
                     </button>
-                    <textField verticalHuggingPriority="750" id="591">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="591">
                         <rect key="frame" x="10" y="69" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="-:-- pm" id="592" customClass="BAVerticallyCenteredTextFieldCell">
@@ -863,7 +865,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField verticalHuggingPriority="750" id="590">
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="590">
                         <rect key="frame" x="10" y="69" width="212" height="34"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Isha" id="593" customClass="BAVerticallyCenteredTextFieldCell">
@@ -872,7 +874,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button focusRingType="none" id="YLI-JC-ka6">
+                    <button focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YLI-JC-ka6">
                         <rect key="frame" x="104" y="74" width="24" height="24"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="sound-off" imagePosition="only" alignment="center" alternateImage="sound-pressed" focusRingType="none" inset="2" id="GGN-K0-k4X">
@@ -883,7 +885,7 @@
                             <action selector="toggleIshaAdhan:" target="494" id="7Fl-d7-J59"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="7fZ-0b-0eX">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7fZ-0b-0eX">
                         <rect key="frame" x="36" y="14" width="160" height="28"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="-" id="j8t-E4-B0S">
@@ -894,6 +896,7 @@
                     </textField>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="139" y="-110"/>
         </window>
     </objects>
     <resources>
