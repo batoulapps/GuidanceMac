@@ -15,6 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
     lazy var menu = NSMenu(title: "Guidance")
     lazy var prayerTimeController = PrayerTimeController()
 
+    private let prayerMenuItemTag: Int = 99
+
     // MARK: - Lifecycle
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -33,6 +35,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
 
     private func configureMenu() {
         menu.removeAllItems()
+
+        let prayerTimeItem = NSMenuItem(title: "", action: nil, keyEquivalent: "")
+        let view = PrayerTimeView()
+        view.frame = PrayerTimeView.menuItemFrame
+        prayerTimeItem.view = view
+        prayerTimeItem.tag = prayerMenuItemTag
+        menu.addItem(prayerTimeItem)
 
         menu.addItem(.separator())
 
@@ -59,6 +68,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
         formatter.dateStyle = .none
         formatter.timeStyle = .short
         statusItem.button?.attributedTitle = NSAttributedString(string: formatter.string(from: Date()))
+
+        if let prayerView = menu.item(withTag: prayerMenuItemTag)?.view as? PrayerTimeView {
+            // TODO set view model
+            prayerView.needsDisplay = true
+        }
     }
 
     // MARK: - Menu Actions

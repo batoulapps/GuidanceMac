@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413C83B2383928200BC9A7F /* PrayerTimeView.swift */; };
 		8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419951D238078F500B316F6 /* PrayerTimeController.swift */; };
 		846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C56A723804D5F006902A8 /* AppDelegate.swift */; };
 		846C56AA23804D60006902A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846C56A923804D60006902A8 /* Assets.xcassets */; };
 		846C56AD23804D60006902A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846C56AB23804D60006902A8 /* MainMenu.xib */; };
 		846C56B823804F60006902A8 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 846C56B723804F60006902A8 /* Adhan */; };
+		8481289D2384E0930010460E /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481289C2384E0930010460E /* Prayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8413C83B2383928200BC9A7F /* PrayerTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeView.swift; sourceTree = "<group>"; };
 		8419951D238078F500B316F6 /* PrayerTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeController.swift; sourceTree = "<group>"; };
 		846C56A423804D5F006902A8 /* Guidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846C56A723804D5F006902A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		846C56AC23804D60006902A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		846C56AE23804D60006902A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846C56AF23804D60006902A8 /* Guidance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guidance.entitlements; sourceTree = "<group>"; };
+		8481289C2384E0930010460E /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,22 @@
 			children = (
 				846C56A723804D5F006902A8 /* AppDelegate.swift */,
 				8419951D238078F500B316F6 /* PrayerTimeController.swift */,
+				8413C83B2383928200BC9A7F /* PrayerTimeView.swift */,
+				8481289B2384E0850010460E /* Extensions */,
 				846C56A923804D60006902A8 /* Assets.xcassets */,
 				846C56AB23804D60006902A8 /* MainMenu.xib */,
 				846C56AE23804D60006902A8 /* Info.plist */,
 				846C56AF23804D60006902A8 /* Guidance.entitlements */,
 			);
 			path = Guidance;
+			sourceTree = "<group>";
+		};
+		8481289B2384E0850010460E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8481289C2384E0930010460E /* Prayer.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +157,8 @@
 			files = (
 				846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */,
 				8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */,
+				8481289D2384E0930010460E /* Prayer.swift in Sources */,
+				8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
