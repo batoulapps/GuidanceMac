@@ -25,6 +25,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
 
         configureMenu()
         statusItem.menu = menu
+        updateStatusItem()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -37,8 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
         menu.removeAllItems()
 
         let prayerTimeItem = NSMenuItem(title: "", action: nil, keyEquivalent: "")
-        let view = PrayerTimeView()
-        view.frame = PrayerTimeView.menuItemFrame
+        let view = PrayerTimeView(frame: PrayerTimeView.menuItemFrame)
         prayerTimeItem.view = view
         prayerTimeItem.tag = prayerMenuItemTag
         menu.addItem(prayerTimeItem)
@@ -70,7 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
         statusItem.button?.attributedTitle = NSAttributedString(string: formatter.string(from: Date()))
 
         if let prayerView = menu.item(withTag: prayerMenuItemTag)?.view as? PrayerTimeView {
-            // TODO set view model
+            prayerView.prayerTimes = prayerTimeController.prayerTimes
             prayerView.needsDisplay = true
         }
     }

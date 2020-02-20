@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413C83B2383928200BC9A7F /* PrayerTimeView.swift */; };
 		8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419951D238078F500B316F6 /* PrayerTimeController.swift */; };
+		8422A1FC239C1C640027EC86 /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422A1FB239C1C640027EC86 /* PrayerTimes.swift */; };
 		846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C56A723804D5F006902A8 /* AppDelegate.swift */; };
 		846C56AA23804D60006902A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846C56A923804D60006902A8 /* Assets.xcassets */; };
 		846C56AD23804D60006902A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846C56AB23804D60006902A8 /* MainMenu.xib */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		8413C83B2383928200BC9A7F /* PrayerTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeView.swift; sourceTree = "<group>"; };
 		8419951D238078F500B316F6 /* PrayerTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeController.swift; sourceTree = "<group>"; };
+		8422A1FB239C1C640027EC86 /* PrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
 		846C56A423804D5F006902A8 /* Guidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846C56A723804D5F006902A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846C56A923804D60006902A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8481289C2384E0930010460E /* Prayer.swift */,
+				8422A1FB239C1C640027EC86 /* PrayerTimes.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */,
 				8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */,
 				8481289D2384E0930010460E /* Prayer.swift in Sources */,
+				8422A1FC239C1C640027EC86 /* PrayerTimes.swift in Sources */,
 				8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

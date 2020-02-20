@@ -17,6 +17,7 @@ protocol PrayerTimeControllerDelegate: AnyObject {
 class PrayerTimeController {
     weak var delegate: PrayerTimeControllerDelegate?
 
+    var prayerTimes: PrayerTimes?
     private var timer: Timer?
 
     // MARK: - Public interface
@@ -26,6 +27,11 @@ class PrayerTimeController {
         timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(handleTimer(timer:)), userInfo: nil, repeats: true)
         timer?.tolerance = 1
         timer?.fire()
+        reloadPrayerTimes()
+    }
+
+    func reloadPrayerTimes() {
+        prayerTimes = PrayerTimes.userPrayerTimes()
     }
 
     // MARK: - Private interface
