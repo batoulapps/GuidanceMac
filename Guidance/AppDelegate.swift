@@ -71,7 +71,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
 
         if let prayerView = menu.item(withTag: prayerMenuItemTag)?.view as? PrayerTimeView {
             prayerView.prayerTimes = prayerTimeController.prayerTimes
-            prayerView.needsDisplay = true
+            prayerView.location = "Raleigh"
+            prayerView.hijriDate = Date()
         }
     }
 

@@ -10,7 +10,7 @@ import Foundation
 import Adhan
 
 extension Prayer {
-    var name: NSString {
+    var name: String {
         switch self {
         case .fajr:
             return "Fajr"
