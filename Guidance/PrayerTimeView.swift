@@ -69,7 +69,7 @@ class PrayerTimeView: NSView {
         for (index, prayer) in Prayer.allCases.enumerated() {
             let nameLabel = nameLabels[index]
             nameLabel.frame = nameRect(row: index)
-            nameLabel.stringValue = prayer.name
+            nameLabel.stringValue = prayer.localizedName()
             addSubview(nameLabel)
             
             let timeLabel = timeLabels[index]
@@ -106,7 +106,7 @@ class PrayerTimeView: NSView {
     private func updatePrayerTimes() {
         for (index, prayer) in Prayer.allCases.enumerated() {
             let nameLabel = nameLabels[index]
-            nameLabel.stringValue = prayer.name
+            nameLabel.stringValue = prayer.localizedName()
             
             let timeLabel = timeLabels[index]
             let time: String = {

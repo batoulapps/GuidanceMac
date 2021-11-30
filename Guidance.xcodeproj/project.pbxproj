@@ -9,25 +9,38 @@
 /* Begin PBXBuildFile section */
 		8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413C83B2383928200BC9A7F /* PrayerTimeView.swift */; };
 		8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419951D238078F500B316F6 /* PrayerTimeController.swift */; };
-		8422A1FC239C1C640027EC86 /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422A1FB239C1C640027EC86 /* PrayerTimes.swift */; };
+		844B71B7274DF841001FF851 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 844B71B6274DF841001FF851 /* Then */; };
+		844B71B9274DF852001FF851 /* FormatterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B71B8274DF852001FF851 /* FormatterStore.swift */; };
+		844B71BB274DF869001FF851 /* PrayerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B71BA274DF869001FF851 /* PrayerFormatter.swift */; };
 		846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C56A723804D5F006902A8 /* AppDelegate.swift */; };
 		846C56AA23804D60006902A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846C56A923804D60006902A8 /* Assets.xcassets */; };
 		846C56AD23804D60006902A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846C56AB23804D60006902A8 /* MainMenu.xib */; };
 		846C56B823804F60006902A8 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 846C56B723804F60006902A8 /* Adhan */; };
-		8481289D2384E0930010460E /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481289C2384E0930010460E /* Prayer.swift */; };
+		84992B692756E6CB004F63F9 /* Adhan+Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992B682756E6CB004F63F9 /* Adhan+Preferences.swift */; };
+		84992B6B2756E74A004F63F9 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992B6A2756E74A004F63F9 /* Calendar.swift */; };
+		849BD41C275300FA0096A3E8 /* DefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD41B275300FA0096A3E8 /* DefaultKey.swift */; };
+		849BD41F275305290096A3E8 /* StoredDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD41E275305290096A3E8 /* StoredDefault.swift */; };
+		849BD421275305600096A3E8 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD420275305600096A3E8 /* AppDefaults.swift */; };
+		849BD423275305C80096A3E8 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD422275305C80096A3E8 /* Preferences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8413C83B2383928200BC9A7F /* PrayerTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeView.swift; sourceTree = "<group>"; };
 		8419951D238078F500B316F6 /* PrayerTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeController.swift; sourceTree = "<group>"; };
-		8422A1FB239C1C640027EC86 /* PrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
+		844B71B8274DF852001FF851 /* FormatterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterStore.swift; sourceTree = "<group>"; };
+		844B71BA274DF869001FF851 /* PrayerFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerFormatter.swift; sourceTree = "<group>"; };
 		846C56A423804D5F006902A8 /* Guidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846C56A723804D5F006902A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846C56A923804D60006902A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846C56AC23804D60006902A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		846C56AE23804D60006902A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846C56AF23804D60006902A8 /* Guidance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guidance.entitlements; sourceTree = "<group>"; };
-		8481289C2384E0930010460E /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
+		84992B682756E6CB004F63F9 /* Adhan+Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adhan+Preferences.swift"; sourceTree = "<group>"; };
+		84992B6A2756E74A004F63F9 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		849BD41B275300FA0096A3E8 /* DefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKey.swift; sourceTree = "<group>"; };
+		849BD41E275305290096A3E8 /* StoredDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredDefault.swift; sourceTree = "<group>"; };
+		849BD420275305600096A3E8 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
+		849BD422275305C80096A3E8 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,12 +49,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				846C56B823804F60006902A8 /* Adhan in Frameworks */,
+				844B71B7274DF841001FF851 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844B71B4274DF7DD001FF851 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				844B71B8274DF852001FF851 /* FormatterStore.swift */,
+				844B71BA274DF869001FF851 /* PrayerFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
 		846C569B23804D5F006902A8 = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +84,11 @@
 		846C56A623804D5F006902A8 /* Guidance */ = {
 			isa = PBXGroup;
 			children = (
+				849BD41A275300E70096A3E8 /* Models */,
 				846C56A723804D5F006902A8 /* AppDelegate.swift */,
 				8419951D238078F500B316F6 /* PrayerTimeController.swift */,
 				8413C83B2383928200BC9A7F /* PrayerTimeView.swift */,
+				844B71B4274DF7DD001FF851 /* Formatters */,
 				8481289B2384E0850010460E /* Extensions */,
 				846C56A923804D60006902A8 /* Assets.xcassets */,
 				846C56AB23804D60006902A8 /* MainMenu.xib */,
@@ -76,10 +101,21 @@
 		8481289B2384E0850010460E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8481289C2384E0930010460E /* Prayer.swift */,
-				8422A1FB239C1C640027EC86 /* PrayerTimes.swift */,
+				84992B682756E6CB004F63F9 /* Adhan+Preferences.swift */,
+				84992B6A2756E74A004F63F9 /* Calendar.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		849BD41A275300E70096A3E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				849BD41B275300FA0096A3E8 /* DefaultKey.swift */,
+				849BD41E275305290096A3E8 /* StoredDefault.swift */,
+				849BD420275305600096A3E8 /* AppDefaults.swift */,
+				849BD422275305C80096A3E8 /* Preferences.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +136,7 @@
 			name = Guidance;
 			packageProductDependencies = (
 				846C56B723804F60006902A8 /* Adhan */,
+				844B71B6274DF841001FF851 /* Then */,
 			);
 			productName = Guidance;
 			productReference = 846C56A423804D5F006902A8 /* Guidance.app */;
@@ -131,6 +168,7 @@
 			mainGroup = 846C569B23804D5F006902A8;
 			packageReferences = (
 				846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */,
+				844B71B5274DF841001FF851 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 846C56A523804D5F006902A8 /* Products */;
 			projectDirPath = "";
@@ -158,11 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84992B6B2756E74A004F63F9 /* Calendar.swift in Sources */,
 				846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */,
+				849BD421275305600096A3E8 /* AppDefaults.swift in Sources */,
+				849BD41C275300FA0096A3E8 /* DefaultKey.swift in Sources */,
 				8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */,
-				8481289D2384E0930010460E /* Prayer.swift in Sources */,
-				8422A1FC239C1C640027EC86 /* PrayerTimes.swift in Sources */,
+				849BD41F275305290096A3E8 /* StoredDefault.swift in Sources */,
+				844B71B9274DF852001FF851 /* FormatterStore.swift in Sources */,
+				849BD423275305C80096A3E8 /* Preferences.swift in Sources */,
+				844B71BB274DF869001FF851 /* PrayerFormatter.swift in Sources */,
 				8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */,
+				84992B692756E6CB004F63F9 /* Adhan+Preferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +407,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		844B71B5274DF841001FF851 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/batoulapps/adhan-swift";
@@ -374,6 +426,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		844B71B6274DF841001FF851 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844B71B5274DF841001FF851 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		846C56B723804F60006902A8 /* Adhan */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */;
