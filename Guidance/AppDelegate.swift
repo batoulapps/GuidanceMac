@@ -8,8 +8,13 @@
 
 import Cocoa
 
-@NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate {
+@main
+final class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate {
+    static func main() {
+        let delegate = AppDelegate()
+        NSApplication.shared.delegate = delegate
+        NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)
+    }
 
     lazy var statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     lazy var menu = NSMenu(title: "Guidance")
@@ -63,11 +68,18 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
         statusItem.button?.image = NSImage(named: "menuBar")
         statusItem.button?.imagePosition = .imageLeft
 
-        // TODO use real prayer times
-        let formatter = DateFormatter()
-        formatter.dateStyle = .none
-        formatter.timeStyle = .short
-        statusItem.button?.attributedTitle = NSAttributedString(string: formatter.string(from: Date()))
+        let title: String = {
+            let now = Date()
+            guard let prayerTimes = prayerTimeController.prayerTimes else {
+                return now.formattedShortPrayerTime()
+            }
+            let nextPrayer = prayerTimes.nextPrayer(at: now) ?? prayerTimes.currentPrayer(at: now)
+            guard let prayer = nextPrayer, let time = prayerTimes.time(for: prayer) else {
+                return now.formattedShortPrayerTime()
+            }
+            return "\(prayer.localizedName()) \(time.formattedShortPrayerTime())"
+        }()
+        statusItem.button?.attributedTitle = NSAttributedString(string: title)
 
         if let prayerView = menu.item(withTag: prayerMenuItemTag)?.view as? PrayerTimeView {
             prayerView.prayerTimes = prayerTimeController.prayerTimes
@@ -83,14 +95,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, PrayerTimeControllerDelegate
     }
 
     @objc func openAbout(sender: NSMenuItem) {
-        if #available(OSX 10.13, *) {
-            let credits = NSMutableAttributedString(string: "Prayer times are calculated using Adhan\n", attributes: [.font: NSFont.systemFont(ofSize: 11)])
-            credits.append(NSAttributedString(string: "github.com/batoulapps/adhan", attributes: [.link: NSURL(string: "https://github.com/batoulapps/adhan")!]))
-            NSApp.orderFrontStandardAboutPanel(options: [.credits: credits])
+        let credits = NSMutableAttributedString(string: "Prayer times are calculated using Adhan\n", attributes: [.font: NSFont.systemFont(ofSize: 11)])
+        credits.append(NSAttributedString(string: "github.com/batoulapps/adhan", attributes: [.link: NSURL(string: "https://github.com/batoulapps/adhan")!]))
+        NSApp.orderFrontStandardAboutPanel(options: [.credits: credits])
+        if #available(macOS 14.0, *) {
+            NSApp.activate()
         } else {
-            NSApp.orderFrontStandardAboutPanel(sender)
+            NSApp.activate(ignoringOtherApps: true)
         }
-        NSApp.activate(ignoringOtherApps: true)
     }
 
     @objc func quitApp(sender: NSMenuItem) {

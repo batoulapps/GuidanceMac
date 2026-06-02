@@ -122,20 +122,18 @@ class PrayerTimeView: NSView {
     
     private func updateLocation() {
         let locationString = NSMutableAttributedString()
-        if #available(macOS 11.0, *) {
-            let imageAttachment = NSTextAttachment()
-            imageAttachment.image = NSImage(systemSymbolName: "location.fill", accessibilityDescription: "Location")
-            
-
-            locationString.append(NSAttributedString(attachment: imageAttachment))
-            locationString.append(NSAttributedString(string: " "))
-        }
+        let imageAttachment = NSTextAttachment()
+        imageAttachment.image = NSImage(systemSymbolName: "location.fill", accessibilityDescription: "Location")
+        locationString.append(NSAttributedString(attachment: imageAttachment))
+        locationString.append(NSAttributedString(string: " "))
         locationString.append(NSAttributedString(string: location))
         locationLabel.attributedStringValue = locationString
     }
     
     private func updateHijriDate() {
-        dateLabel.stringValue = "Ramadan 2, 1453"
+        let now = Date()
+        let hijriDate = Calendar.userHijriDate(for: now)
+        dateLabel.stringValue = hijriDate.formattedHijriDate(actualDate: now)
     }
 
     private func nameRect(row: Int) -> NSRect {

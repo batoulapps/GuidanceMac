@@ -136,7 +136,8 @@ class FormatterStore {
     
     fileprivate static func arabicOverrideLocale() -> Locale {
         var localeComponents: [String : String] = [NSLocale.Key.languageCode.rawValue : "ar", "numbers": "latn"]
-        if let regionCode = Locale.current.regionCode {
+        let regionCode = Locale.current.region?.identifier ?? Locale.current.regionCode
+        if let regionCode = regionCode {
             localeComponents[NSLocale.Key.countryCode.rawValue] = regionCode
         }
         return Locale(identifier: Locale.identifier(fromComponents: localeComponents))

@@ -24,8 +24,7 @@ class PrayerTimeController {
 
     func beginUpdates() {
         timer?.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(handleTimer(timer:)), userInfo: nil, repeats: true)
-        timer?.tolerance = 1
+        timer = makeTimer()
         timer?.fire()
         reloadPrayerTimes()
     }
@@ -36,9 +35,17 @@ class PrayerTimeController {
 
     // MARK: - Private interface
 
+    private func makeTimer() -> Timer {
+        let timer = Timer(fireAt: nextFireDate(), interval: 60, target: self, selector: #selector(handleTimer(timer:)), userInfo: nil, repeats: true)
+        timer.tolerance = 1
+        RunLoop.main.add(timer, forMode: .common)
+        return timer
+    }
+
     @objc private func handleTimer(timer: Timer) {
         if timer.isValid {
-            timer.fireDate = nextFireDate()
+            timer.invalidate()
+            self.timer = makeTimer()
         }
         delegate?.didUpdateStatus()
     }
