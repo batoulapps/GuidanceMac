@@ -1,6 +1,0 @@
-framework module StartAtLoginController {
-  umbrella header "StartAtLoginController-umbrella.h"
-
-  export *
-  module * { export * }
-}
