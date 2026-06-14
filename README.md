@@ -38,14 +38,9 @@ Guidance is a calm, native macOS companion for the five daily prayers. It lives 
 
 <div align="center">
 
-<!--
-  Drop product shots into a docs/ folder to bring this section to life.
-  Suggested captures: menu-bar dropdown, the three widget sizes, the Appearance tab.
--->
-
 | Menu bar | Widgets | Settings |
 | :---: | :---: | :---: |
-| _add `docs/menu-bar.png`_ | _add `docs/widgets.png`_ | _add `docs/settings.png`_ |
+| <img src="https://github.com/omar-hanafy/GuidanceMac/blob/app-rebuild/docs/menu-bar.png?raw=true" alt="Guidance menu bar dropdown" height="200"> | <img src="https://github.com/omar-hanafy/GuidanceMac/blob/app-rebuild/docs/widgets.png?raw=true" alt="Guidance widgets in small, medium, and large sizes" height="200"> | <img src="https://github.com/omar-hanafy/GuidanceMac/blob/app-rebuild/docs/settings.png?raw=true" alt="Guidance settings window" height="200"> |
 
 </div>
 
