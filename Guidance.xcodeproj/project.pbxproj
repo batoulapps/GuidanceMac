@@ -214,6 +214,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2640;
 				LastUpgradeCheck = 2640;
+				ORGANIZATIONNAME = "Batoul Apps";
 				TargetAttributes = {
 					3232E4862FCB342B0020BF8B = {
 						CreatedOnToolsVersion = 26.4;
@@ -311,6 +312,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuidanceWidgetsExtension/GuidanceWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
 				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuidanceWidgetsExtension/Info.plist;
@@ -344,6 +346,7 @@
 				CODE_SIGN_ENTITLEMENTS = GuidanceWidgetsExtension/GuidanceWidgetsExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
 				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuidanceWidgetsExtension/Info.plist;
@@ -496,6 +499,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -534,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
