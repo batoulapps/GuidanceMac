@@ -40,7 +40,7 @@ Guidance is a calm, native macOS companion for the five daily prayers. It lives 
 
 | Menu bar | Widgets | Settings |
 | :---: | :---: | :---: |
-| <img src="https://github.com/batoulapps/GuidanceMac/blob/app-rebuild/docs/menu-bar.png?raw=true" alt="Guidance menu bar dropdown" height="200"> | <img src="https://github.com/batoulapps/GuidanceMac/blob/app-rebuild/docs/widgets.png?raw=true" alt="Guidance widgets in small, medium, and large sizes" height="200"> | <img src="https://github.com/batoulapps/GuidanceMac/blob/app-rebuild/docs/settings.png?raw=true" alt="Guidance settings window" height="200"> |
+| <img src="https://github.com/batoulapps/GuidanceMac/blob/main/docs/menu-bar.png?raw=true" alt="Guidance menu bar dropdown" height="200"> | <img src="https://github.com/batoulapps/GuidanceMac/blob/main/docs/widgets.png?raw=true" alt="Guidance widgets in small, medium, and large sizes" height="200"> | <img src="https://github.com/batoulapps/GuidanceMac/blob/main/docs/settings.png?raw=true" alt="Guidance settings window" height="200"> |
 
 </div>
 
