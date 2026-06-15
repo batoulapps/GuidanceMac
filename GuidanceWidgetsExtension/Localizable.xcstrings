@@ -1,0 +1,242 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Stop Adhan": {
+      "comment": "Title of the widget Stop button intent, shown in Shortcuts and system UI.",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف الأذان"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop Adhan"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arrêter l’adhan"
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اذان روکیں"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hentikan Azan"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ezanı Durdur"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "توقف اذان"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "আজান বন্ধ করুন"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hentikan Azan"
+          }
+        }
+      }
+    },
+    "widget.openToSetUp": {
+      "comment": "Shown on the widget when no prayer data exists yet (system language).",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افتح هداية لإعداد أوقات الصلاة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Guidance to set up prayer times"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrez Guidance pour configurer les heures de prière"
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اوقاتِ نماز ترتیب دینے کے لیے Guidance کھولیں"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka Guidance untuk menyiapkan jadwal salat"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namaz vakitlerini ayarlamak için Guidance'ı açın"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "برای تنظیم اوقات نماز Guidance را باز کنید"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "নামাজের সময় সেট আপ করতে Guidance খুলুন"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka Guidance untuk menetapkan waktu solat"
+          }
+        }
+      }
+    },
+    "widget.prayerTimes.description": {
+      "comment": "Widget gallery description (system language).",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعرض الصلاة القادمة وأوقات اليوم والتاريخ الهجري والتحكم في الأذان."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows the next prayer, today’s times, the Hijri date, and adhan controls."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiche la prochaine prière, les horaires du jour, la date hégirienne et les commandes de l’adhan."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اگلی نماز، آج کے اوقات، ہجری تاریخ اور اذان کنٹرول دکھاتا ہے۔"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menampilkan salat berikutnya, jadwal hari ini, tanggal Hijriah, dan kontrol azan."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonraki namazı, bugünün vakitlerini, Hicri tarihi ve ezan denetimlerini gösterir."
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نماز بعدی، اوقات امروز، تاریخ هجری و کنترل‌های اذان را نشان می‌دهد."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "পরবর্তী নামাজ, আজকের সময়সূচি, হিজরি তারিখ এবং আজান নিয়ন্ত্রণ দেখায়।"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memaparkan solat seterusnya, waktu hari ini, tarikh Hijrah, dan kawalan azan."
+          }
+        }
+      }
+    },
+    "widget.prayerTimes.displayName": {
+      "comment": "Widget gallery name (system language).",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هداية - أوقات الصلاة"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance Prayer Times"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance - Heures de prière"
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance - اوقاتِ نماز"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance - Jadwal Salat"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance - Namaz Vakitleri"
+          }
+        },
+        "fa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance - اوقات نماز"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance - নামাজের সময়"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guidance - Waktu Solat"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

@@ -3,235 +3,383 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413C83B2383928200BC9A7F /* PrayerTimeView.swift */; };
-		8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419951D238078F500B316F6 /* PrayerTimeController.swift */; };
-		844B71B7274DF841001FF851 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 844B71B6274DF841001FF851 /* Then */; };
-		844B71B9274DF852001FF851 /* FormatterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B71B8274DF852001FF851 /* FormatterStore.swift */; };
-		844B71BB274DF869001FF851 /* PrayerFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B71BA274DF869001FF851 /* PrayerFormatter.swift */; };
-		846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C56A723804D5F006902A8 /* AppDelegate.swift */; };
-		846C56AA23804D60006902A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846C56A923804D60006902A8 /* Assets.xcassets */; };
-		846C56AD23804D60006902A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846C56AB23804D60006902A8 /* MainMenu.xib */; };
-		846C56B823804F60006902A8 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 846C56B723804F60006902A8 /* Adhan */; };
-		84992B692756E6CB004F63F9 /* Adhan+Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992B682756E6CB004F63F9 /* Adhan+Preferences.swift */; };
-		84992B6B2756E74A004F63F9 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992B6A2756E74A004F63F9 /* Calendar.swift */; };
-		849BD41C275300FA0096A3E8 /* DefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD41B275300FA0096A3E8 /* DefaultKey.swift */; };
-		849BD41F275305290096A3E8 /* StoredDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD41E275305290096A3E8 /* StoredDefault.swift */; };
-		849BD421275305600096A3E8 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD420275305600096A3E8 /* AppDefaults.swift */; };
-		849BD423275305C80096A3E8 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BD422275305C80096A3E8 /* Preferences.swift */; };
+		3232E48A2FCB342B0020BF8B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3232E4892FCB342B0020BF8B /* WidgetKit.framework */; };
+		3232E48C2FCB342B0020BF8B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3232E48B2FCB342B0020BF8B /* SwiftUI.framework */; };
+		3232E49B2FCB342C0020BF8B /* GuidanceWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3232E4872FCB342B0020BF8B /* GuidanceWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		32805F9D2FC5A75800BA0202 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 32805F412FC5C00100BA0202 /* Adhan */; };
+		D1D1D1D10000000000000A01 /* GuidanceWidgetConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F1 /* GuidanceWidgetConstants.swift */; };
+		D1D1D1D10000000000000A02 /* GuidanceWidgetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F2 /* GuidanceWidgetModels.swift */; };
+		D1D1D1D10000000000000A03 /* GuidanceWidgetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F3 /* GuidanceWidgetStore.swift */; };
+		D1D1D1D10000000000000A04 /* StopGuidanceAudioIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F4 /* StopGuidanceAudioIntent.swift */; };
+		D1D1D1D10000000000000A05 /* WidgetUI/GuidanceWidgetTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F5 /* WidgetUI/GuidanceWidgetTheme.swift */; };
+		D1D1D1D10000000000000A06 /* WidgetUI/GuidanceWidgetDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F6 /* WidgetUI/GuidanceWidgetDesignSystem.swift */; };
+		D1D1D1D10000000000000A07 /* WidgetUI/GuidanceWidgetContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F7 /* WidgetUI/GuidanceWidgetContentViews.swift */; };
+		D1D1D1D10000000000000E01 /* GuidanceWidgetConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F1 /* GuidanceWidgetConstants.swift */; };
+		D1D1D1D10000000000000E02 /* GuidanceWidgetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F2 /* GuidanceWidgetModels.swift */; };
+		D1D1D1D10000000000000E03 /* GuidanceWidgetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F3 /* GuidanceWidgetStore.swift */; };
+		D1D1D1D10000000000000E04 /* StopGuidanceAudioIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F4 /* StopGuidanceAudioIntent.swift */; };
+		D1D1D1D10000000000000E05 /* WidgetUI/GuidanceWidgetTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F5 /* WidgetUI/GuidanceWidgetTheme.swift */; };
+		D1D1D1D10000000000000E06 /* WidgetUI/GuidanceWidgetDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F6 /* WidgetUI/GuidanceWidgetDesignSystem.swift */; };
+		D1D1D1D10000000000000E07 /* WidgetUI/GuidanceWidgetContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D1D1D100000000000000F7 /* WidgetUI/GuidanceWidgetContentViews.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3232E4992FCB342C0020BF8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32805F242FC5A04A00BA0202 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3232E4862FCB342B0020BF8B;
+			remoteInfo = GuidanceWidgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3232E49C2FCB342C0020BF8B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3232E49B2FCB342C0020BF8B /* GuidanceWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		8413C83B2383928200BC9A7F /* PrayerTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeView.swift; sourceTree = "<group>"; };
-		8419951D238078F500B316F6 /* PrayerTimeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeController.swift; sourceTree = "<group>"; };
-		844B71B8274DF852001FF851 /* FormatterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterStore.swift; sourceTree = "<group>"; };
-		844B71BA274DF869001FF851 /* PrayerFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerFormatter.swift; sourceTree = "<group>"; };
-		846C56A423804D5F006902A8 /* Guidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		846C56A723804D5F006902A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		846C56A923804D60006902A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		846C56AC23804D60006902A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		846C56AE23804D60006902A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		846C56AF23804D60006902A8 /* Guidance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guidance.entitlements; sourceTree = "<group>"; };
-		84992B682756E6CB004F63F9 /* Adhan+Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adhan+Preferences.swift"; sourceTree = "<group>"; };
-		84992B6A2756E74A004F63F9 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
-		849BD41B275300FA0096A3E8 /* DefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultKey.swift; sourceTree = "<group>"; };
-		849BD41E275305290096A3E8 /* StoredDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredDefault.swift; sourceTree = "<group>"; };
-		849BD420275305600096A3E8 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
-		849BD422275305C80096A3E8 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		3232E4872FCB342B0020BF8B /* GuidanceWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GuidanceWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3232E4892FCB342B0020BF8B /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3232E48B2FCB342B0020BF8B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		32805F2C2FC5A04A00BA0202 /* Guidance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D1D1D100000000000000F1 /* GuidanceWidgetConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceWidgetConstants.swift; sourceTree = "<group>"; };
+		D1D1D1D100000000000000F2 /* GuidanceWidgetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceWidgetModels.swift; sourceTree = "<group>"; };
+		D1D1D1D100000000000000F3 /* GuidanceWidgetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceWidgetStore.swift; sourceTree = "<group>"; };
+		D1D1D1D100000000000000F4 /* StopGuidanceAudioIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopGuidanceAudioIntent.swift; sourceTree = "<group>"; };
+		D1D1D1D100000000000000F5 /* WidgetUI/GuidanceWidgetTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUI/GuidanceWidgetTheme.swift; sourceTree = "<group>"; };
+		D1D1D1D100000000000000F6 /* WidgetUI/GuidanceWidgetDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUI/GuidanceWidgetDesignSystem.swift; sourceTree = "<group>"; };
+		D1D1D1D100000000000000F7 /* WidgetUI/GuidanceWidgetContentViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUI/GuidanceWidgetContentViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3232E49F2FCB342C0020BF8B /* Exceptions for "GuidanceWidgetsExtension" folder in "GuidanceWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3232E4862FCB342B0020BF8B /* GuidanceWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3232E48D2FCB342B0020BF8B /* GuidanceWidgetsExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3232E49F2FCB342C0020BF8B /* Exceptions for "GuidanceWidgetsExtension" folder in "GuidanceWidgetsExtension" target */,
+			);
+			path = GuidanceWidgetsExtension;
+			sourceTree = "<group>";
+		};
+		32805F2E2FC5A04A00BA0202 /* Guidance */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Guidance;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		846C56A123804D5F006902A8 /* Frameworks */ = {
+		3232E4842FCB342B0020BF8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846C56B823804F60006902A8 /* Adhan in Frameworks */,
-				844B71B7274DF841001FF851 /* Then in Frameworks */,
+				3232E48C2FCB342B0020BF8B /* SwiftUI.framework in Frameworks */,
+				3232E48A2FCB342B0020BF8B /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32805F292FC5A04A00BA0202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32805F9D2FC5A75800BA0202 /* Adhan in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		844B71B4274DF7DD001FF851 /* Formatters */ = {
+		3232E4882FCB342B0020BF8B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				844B71B8274DF852001FF851 /* FormatterStore.swift */,
-				844B71BA274DF869001FF851 /* PrayerFormatter.swift */,
+				3232E4892FCB342B0020BF8B /* WidgetKit.framework */,
+				3232E48B2FCB342B0020BF8B /* SwiftUI.framework */,
 			);
-			path = Formatters;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		846C569B23804D5F006902A8 = {
+		32805F232FC5A04A00BA0202 = {
 			isa = PBXGroup;
 			children = (
-				846C56A623804D5F006902A8 /* Guidance */,
-				846C56A523804D5F006902A8 /* Products */,
+				32805F2E2FC5A04A00BA0202 /* Guidance */,
+				3232E48D2FCB342B0020BF8B /* GuidanceWidgetsExtension */,
+				D1D1D1D10000000000000601 /* Shared */,
+				3232E4882FCB342B0020BF8B /* Frameworks */,
+				32805F2D2FC5A04A00BA0202 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		846C56A523804D5F006902A8 /* Products */ = {
+		32805F2D2FC5A04A00BA0202 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				846C56A423804D5F006902A8 /* Guidance.app */,
+				32805F2C2FC5A04A00BA0202 /* Guidance.app */,
+				3232E4872FCB342B0020BF8B /* GuidanceWidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		846C56A623804D5F006902A8 /* Guidance */ = {
+		D1D1D1D10000000000000601 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				849BD41A275300E70096A3E8 /* Models */,
-				846C56A723804D5F006902A8 /* AppDelegate.swift */,
-				8419951D238078F500B316F6 /* PrayerTimeController.swift */,
-				8413C83B2383928200BC9A7F /* PrayerTimeView.swift */,
-				844B71B4274DF7DD001FF851 /* Formatters */,
-				8481289B2384E0850010460E /* Extensions */,
-				846C56A923804D60006902A8 /* Assets.xcassets */,
-				846C56AB23804D60006902A8 /* MainMenu.xib */,
-				846C56AE23804D60006902A8 /* Info.plist */,
-				846C56AF23804D60006902A8 /* Guidance.entitlements */,
+				D1D1D1D100000000000000F1 /* GuidanceWidgetConstants.swift */,
+				D1D1D1D100000000000000F2 /* GuidanceWidgetModels.swift */,
+				D1D1D1D100000000000000F3 /* GuidanceWidgetStore.swift */,
+				D1D1D1D100000000000000F4 /* StopGuidanceAudioIntent.swift */,
+				D1D1D1D100000000000000F5 /* WidgetUI/GuidanceWidgetTheme.swift */,
+				D1D1D1D100000000000000F6 /* WidgetUI/GuidanceWidgetDesignSystem.swift */,
+				D1D1D1D100000000000000F7 /* WidgetUI/GuidanceWidgetContentViews.swift */,
 			);
-			path = Guidance;
-			sourceTree = "<group>";
-		};
-		8481289B2384E0850010460E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				84992B682756E6CB004F63F9 /* Adhan+Preferences.swift */,
-				84992B6A2756E74A004F63F9 /* Calendar.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		849BD41A275300E70096A3E8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				849BD41B275300FA0096A3E8 /* DefaultKey.swift */,
-				849BD41E275305290096A3E8 /* StoredDefault.swift */,
-				849BD420275305600096A3E8 /* AppDefaults.swift */,
-				849BD422275305C80096A3E8 /* Preferences.swift */,
-			);
-			path = Models;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		846C56A323804D5F006902A8 /* Guidance */ = {
+		3232E4862FCB342B0020BF8B /* GuidanceWidgetsExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 846C56B223804D60006902A8 /* Build configuration list for PBXNativeTarget "Guidance" */;
+			buildConfigurationList = 3232E4A02FCB342C0020BF8B /* Build configuration list for PBXNativeTarget "GuidanceWidgetsExtension" */;
 			buildPhases = (
-				846C56A023804D5F006902A8 /* Sources */,
-				846C56A123804D5F006902A8 /* Frameworks */,
-				846C56A223804D5F006902A8 /* Resources */,
+				3232E4832FCB342B0020BF8B /* Sources */,
+				3232E4842FCB342B0020BF8B /* Frameworks */,
+				3232E4852FCB342B0020BF8B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				3232E48D2FCB342B0020BF8B /* GuidanceWidgetsExtension */,
+			);
+			name = GuidanceWidgetsExtension;
+			packageProductDependencies = (
+			);
+			productName = GuidanceWidgetsExtension;
+			productReference = 3232E4872FCB342B0020BF8B /* GuidanceWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		32805F2B2FC5A04A00BA0202 /* Guidance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32805F372FC5A04C00BA0202 /* Build configuration list for PBXNativeTarget "Guidance" */;
+			buildPhases = (
+				32805F282FC5A04A00BA0202 /* Sources */,
+				32805F292FC5A04A00BA0202 /* Frameworks */,
+				32805F2A2FC5A04A00BA0202 /* Resources */,
+				3232E49C2FCB342C0020BF8B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3232E49A2FCB342C0020BF8B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				32805F2E2FC5A04A00BA0202 /* Guidance */,
+			);
 			name = Guidance;
 			packageProductDependencies = (
-				846C56B723804F60006902A8 /* Adhan */,
-				844B71B6274DF841001FF851 /* Then */,
+				32805F412FC5C00100BA0202 /* Adhan */,
 			);
 			productName = Guidance;
-			productReference = 846C56A423804D5F006902A8 /* Guidance.app */;
+			productReference = 32805F2C2FC5A04A00BA0202 /* Guidance.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		846C569C23804D5F006902A8 /* Project object */ = {
+		32805F242FC5A04A00BA0202 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
 				ORGANIZATIONNAME = "Batoul Apps";
 				TargetAttributes = {
-					846C56A323804D5F006902A8 = {
-						CreatedOnToolsVersion = 11.2.1;
+					3232E4862FCB342B0020BF8B = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					32805F2B2FC5A04A00BA0202 = {
+						CreatedOnToolsVersion = 26.4;
 					};
 				};
 			};
-			buildConfigurationList = 846C569F23804D5F006902A8 /* Build configuration list for PBXProject "Guidance" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 32805F272FC5A04A00BA0202 /* Build configuration list for PBXProject "Guidance" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 846C569B23804D5F006902A8;
+			mainGroup = 32805F232FC5A04A00BA0202;
+			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */,
-				844B71B5274DF841001FF851 /* XCRemoteSwiftPackageReference "Then" */,
+				32805F402FC5C00100BA0202 /* XCRemoteSwiftPackageReference "adhan-swift" */,
 			);
-			productRefGroup = 846C56A523804D5F006902A8 /* Products */;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 32805F2D2FC5A04A00BA0202 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				846C56A323804D5F006902A8 /* Guidance */,
+				32805F2B2FC5A04A00BA0202 /* Guidance */,
+				3232E4862FCB342B0020BF8B /* GuidanceWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		846C56A223804D5F006902A8 /* Resources */ = {
+		3232E4852FCB342B0020BF8B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846C56AA23804D60006902A8 /* Assets.xcassets in Resources */,
-				846C56AD23804D60006902A8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32805F2A2FC5A04A00BA0202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		846C56A023804D5F006902A8 /* Sources */ = {
+		3232E4832FCB342B0020BF8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84992B6B2756E74A004F63F9 /* Calendar.swift in Sources */,
-				846C56A823804D5F006902A8 /* AppDelegate.swift in Sources */,
-				849BD421275305600096A3E8 /* AppDefaults.swift in Sources */,
-				849BD41C275300FA0096A3E8 /* DefaultKey.swift in Sources */,
-				8419951E238078F500B316F6 /* PrayerTimeController.swift in Sources */,
-				849BD41F275305290096A3E8 /* StoredDefault.swift in Sources */,
-				844B71B9274DF852001FF851 /* FormatterStore.swift in Sources */,
-				849BD423275305C80096A3E8 /* Preferences.swift in Sources */,
-				844B71BB274DF869001FF851 /* PrayerFormatter.swift in Sources */,
-				8413C83C2383928200BC9A7F /* PrayerTimeView.swift in Sources */,
-				84992B692756E6CB004F63F9 /* Adhan+Preferences.swift in Sources */,
+				D1D1D1D10000000000000E01 /* GuidanceWidgetConstants.swift in Sources */,
+				D1D1D1D10000000000000E02 /* GuidanceWidgetModels.swift in Sources */,
+				D1D1D1D10000000000000E03 /* GuidanceWidgetStore.swift in Sources */,
+				D1D1D1D10000000000000E04 /* StopGuidanceAudioIntent.swift in Sources */,
+				D1D1D1D10000000000000E05 /* WidgetUI/GuidanceWidgetTheme.swift in Sources */,
+				D1D1D1D10000000000000E06 /* WidgetUI/GuidanceWidgetDesignSystem.swift in Sources */,
+				D1D1D1D10000000000000E07 /* WidgetUI/GuidanceWidgetContentViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32805F282FC5A04A00BA0202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D1D1D10000000000000A01 /* GuidanceWidgetConstants.swift in Sources */,
+				D1D1D1D10000000000000A02 /* GuidanceWidgetModels.swift in Sources */,
+				D1D1D1D10000000000000A03 /* GuidanceWidgetStore.swift in Sources */,
+				D1D1D1D10000000000000A04 /* StopGuidanceAudioIntent.swift in Sources */,
+				D1D1D1D10000000000000A05 /* WidgetUI/GuidanceWidgetTheme.swift in Sources */,
+				D1D1D1D10000000000000A06 /* WidgetUI/GuidanceWidgetDesignSystem.swift in Sources */,
+				D1D1D1D10000000000000A07 /* WidgetUI/GuidanceWidgetContentViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		846C56AB23804D60006902A8 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				846C56AC23804D60006902A8 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		3232E49A2FCB342C0020BF8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3232E4862FCB342B0020BF8B /* GuidanceWidgetsExtension */;
+			targetProxy = 3232E4992FCB342C0020BF8B /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		846C56B023804D60006902A8 /* Debug */ = {
+		3232E49D2FCB342C0020BF8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GuidanceWidgetsExtension/GuidanceWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuidanceWidgetsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GuidanceWidgetsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batoulapps.GuidanceMac.GuidanceWidgetsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		3232E49E2FCB342C0020BF8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GuidanceWidgetsExtension/GuidanceWidgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 300;
+				DEVELOPMENT_TEAM = 5H3PBG23RV;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuidanceWidgetsExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GuidanceWidgetsExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.batoulapps.GuidanceMac.GuidanceWidgetsExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		32805F352FC5A04C00BA0202 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -250,6 +398,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -260,7 +409,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -274,24 +424,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		846C56B123804D60006902A8 /* Release */ = {
+		32805F362FC5A04C00BA0202 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -310,6 +461,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -320,7 +472,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -328,78 +481,119 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		846C56B323804D60006902A8 /* Debug */ = {
+		32805F382FC5A04C00BA0202 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Guidance/Guidance.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 300;
 				DEVELOPMENT_TEAM = 5H3PBG23RV;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = Guidance/Info.plist;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Guidance;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Guidance pauses Music or iTunes before playing the adhan.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2019 Batoul Apps. All rights reserved.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Your location is used to calculate prayer times for your area.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to calculate prayer times for your area.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.batoulapps.GuidanceMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		846C56B423804D60006902A8 /* Release */ = {
+		32805F392FC5A04C00BA0202 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Guidance/Guidance.entitlements;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 300;
 				DEVELOPMENT_TEAM = 5H3PBG23RV;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = Guidance/Info.plist;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Guidance;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "Guidance pauses Music or iTunes before playing the adhan.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright 2019 Batoul Apps. All rights reserved.";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Your location is used to calculate prayer times for your area.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to calculate prayer times for your area.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MARKETING_VERSION = 3.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.batoulapps.GuidanceMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		846C569F23804D5F006902A8 /* Build configuration list for PBXProject "Guidance" */ = {
+		3232E4A02FCB342C0020BF8B /* Build configuration list for PBXNativeTarget "GuidanceWidgetsExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				846C56B023804D60006902A8 /* Debug */,
-				846C56B123804D60006902A8 /* Release */,
+				3232E49D2FCB342C0020BF8B /* Debug */,
+				3232E49E2FCB342C0020BF8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		846C56B223804D60006902A8 /* Build configuration list for PBXNativeTarget "Guidance" */ = {
+		32805F272FC5A04A00BA0202 /* Build configuration list for PBXProject "Guidance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				846C56B323804D60006902A8 /* Debug */,
-				846C56B423804D60006902A8 /* Release */,
+				32805F352FC5A04C00BA0202 /* Debug */,
+				32805F362FC5A04C00BA0202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32805F372FC5A04C00BA0202 /* Build configuration list for PBXNativeTarget "Guidance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32805F382FC5A04C00BA0202 /* Debug */,
+				32805F392FC5A04C00BA0202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -407,36 +601,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		844B71B5274DF841001FF851 /* XCRemoteSwiftPackageReference "Then" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/devxoul/Then";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
+		32805F402FC5C00100BA0202 /* XCRemoteSwiftPackageReference "adhan-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/batoulapps/adhan-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		844B71B6274DF841001FF851 /* Then */ = {
+		32805F412FC5C00100BA0202 /* Adhan */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 844B71B5274DF841001FF851 /* XCRemoteSwiftPackageReference "Then" */;
-			productName = Then;
-		};
-		846C56B723804F60006902A8 /* Adhan */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 846C56B623804F60006902A8 /* XCRemoteSwiftPackageReference "adhan-swift" */;
+			package = 32805F402FC5C00100BA0202 /* XCRemoteSwiftPackageReference "adhan-swift" */;
 			productName = Adhan;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 846C569C23804D5F006902A8 /* Project object */;
+	rootObject = 32805F242FC5A04A00BA0202 /* Project object */;
 }
