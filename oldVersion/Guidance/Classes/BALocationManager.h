@@ -17,5 +17,7 @@ static NSString *kLocationDidFailNotification = @"kLocationDidFailNotification";
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
 + (BALocationManager *)defaultManager;
+- (void)startTrackingLocation;
+- (void)stopTrackingLocation;
 
 @end

@@ -125,11 +125,11 @@
     if (error.code == kCLErrorNetwork) {
         [alert setInformativeText:@"Network connection unavailable"];
     } else if (error.code == kCLErrorDenied) {
-        [alert setInformativeText:@"Location services for Guidance is not enabled"];
+        [alert setInformativeText:@"Location services for Guidance is not enabled. Enable from System Settings to use location services."];
     } else {
         [alert setInformativeText:@"Unable to get current location"];
     }
-    [alert setAlertStyle:NSCriticalAlertStyle];
+    [alert setAlertStyle:NSAlertStyleCritical];
     [alert beginSheetModalForWindow:self.view.window completionHandler:nil];
 }
 
@@ -159,19 +159,14 @@
     NSButton *button = (NSButton *)sender;
     
     if (button.state == NSOnState) {
-        [[BAPreferences sharedPreferences] setUseCurrentLocation:YES];
-        
-        [[[BALocationManager defaultManager] locationManager] stopUpdatingLocation];
-        [[[BALocationManager defaultManager] locationManager] startUpdatingLocation];
-        [[[BALocationManager defaultManager] locationManager] startMonitoringSignificantLocationChanges];
         [self.lookupSuccessIndicator setAlphaValue:0.0];
         [self.progressIndicator startAnimation:nil];
+        [[BAPreferences sharedPreferences] setUseCurrentLocation:YES];
+        [[BALocationManager defaultManager] startTrackingLocation];
     } else {
-        [[BAPreferences sharedPreferences] setUseCurrentLocation:NO];
-        
-        [[[BALocationManager defaultManager] locationManager] stopUpdatingLocation];
-        [[[BALocationManager defaultManager] locationManager] stopMonitoringSignificantLocationChanges];
         [self.progressIndicator stopAnimation:nil];
+        [[BAPreferences sharedPreferences] setUseCurrentLocation:NO];
+        [[BALocationManager defaultManager] stopTrackingLocation];
     }
     
     [self updateUI];

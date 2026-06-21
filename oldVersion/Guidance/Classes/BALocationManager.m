@@ -37,7 +37,50 @@
 	return _locationManager;
 }
 
+- (void)stopTrackingLocation
+{
+    [self.locationManager stopUpdatingLocation];
+}
+
+- (void)startTrackingLocation
+{
+    [self.locationManager stopUpdatingLocation];
+    
+    CLAuthorizationStatus status;
+    if (@available(macOS 11.0, *)) {
+        status = self.locationManager.authorizationStatus;
+    } else {
+        status = [CLLocationManager authorizationStatus];
+    }
+    
+    if (status == kCLAuthorizationStatusNotDetermined) {
+        if (@available(macOS 10.15, *)) {
+            [self.locationManager requestWhenInUseAuthorization];
+        } else {
+            [self.locationManager startUpdatingLocation];
+        }
+    } else if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorized) {
+        [self.locationManager startUpdatingLocation];
+    } else {
+        [[BAPreferences sharedPreferences] setUseCurrentLocation:NO];
+        NSError *deniedError = [NSError errorWithDomain:kCLErrorDomain code:kCLErrorDenied userInfo:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLocationDidFailNotification object:deniedError];
+    }
+}
+
 #pragma mark - CLLocationManager Delegate
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorized) {
+        [manager startUpdatingLocation];
+    } else if (status == kCLAuthorizationStatusDenied) {
+        [[BAPreferences sharedPreferences] setUseCurrentLocation:NO];
+        NSError *deniedError = [NSError errorWithDomain:kCLErrorDomain code:kCLErrorDenied userInfo:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLocationDidFailNotification object:deniedError];
+        [manager stopUpdatingLocation];
+    }
+}
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {

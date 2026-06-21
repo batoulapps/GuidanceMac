@@ -172,8 +172,7 @@ static CGFloat const kBAPanelCloseDuration = 0.10;
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         if ([[BAPreferences sharedPreferences] useCurrentLocation]) {
-            [[[BALocationManager defaultManager] locationManager] startUpdatingLocation];
-            [[[BALocationManager defaultManager] locationManager] startMonitoringSignificantLocationChanges];
+            [[BALocationManager defaultManager] startTrackingLocation];
         }
     });
 }
@@ -1050,7 +1049,21 @@ static CGFloat const kBAPanelCloseDuration = 0.10;
 		BAAdvancedPrefsViewController *advancedPrefsViewController = [[BAAdvancedPrefsViewController alloc] initWithNibName:@"BAAdvancedPrefsViewController" bundle:nil];
 		
         NSString *title = NSLocalizedString(@"Preferences", @"Common title for Preferences window");
-        _preferencesWindowController = [[MASPreferencesWindowController alloc] initWithViewControllers:@[generalPrefsViewController, locationPrefsViewController,calculationPrefsViewController,notificationPrefsViewController,advancedPrefsViewController] title:title];
+        
+        MASPreferencesWindowController *prefsController = [[MASPreferencesWindowController alloc] initWithViewControllers:@[generalPrefsViewController, locationPrefsViewController,calculationPrefsViewController,notificationPrefsViewController,advancedPrefsViewController] title:title];
+        if (@available(macOS 10.13, *)) {
+            for (NSToolbarItem *item in [prefsController.toolbar items]) {
+                item.visibilityPriority = NSToolbarItemVisibilityPriorityUser;
+            }
+        }
+        NSWindow *window = prefsController.window;
+        //window.titleVisibility = NSWindowTitleHidden;
+        if (@available(macOS 11.0, *)) {
+            // Forces the classic layout: Title on top, tabs on the bottom
+            window.toolbarStyle = NSWindowToolbarStyleExpanded;
+        }
+
+        _preferencesWindowController = prefsController;
     }
     return _preferencesWindowController;
 }
